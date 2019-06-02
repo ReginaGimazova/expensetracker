@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 import {Tabs, TabPanel, TabList, Tab} from 'react-tabs';
-import CalendarWeek from '../../blocks/calendar/_type/week';
-import CalendarDay from '../../blocks/calendar/_type/day';
-import CalendarMonth from '../../blocks/calendar/_type/month';
+import CalendarWeek from '../../blocks/calendar/_type/_week';
+import CalendarDay from '../../blocks/calendar/_type/_day';
+import CalendarMonth from '../../blocks/calendar/_type/_month';
 import MainTemplate from "../../templates/MainTemplate";
 import data from "../../data/spending";
 import "../../stylesheets/main.css"

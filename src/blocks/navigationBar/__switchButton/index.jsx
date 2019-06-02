@@ -1,5 +1,5 @@
 import React from "react";
-import "./switchButton.css";
+import "./navigationBar__switchButton.css";
 
 const NavigationButton = ({ type, prevClick, nextClick }) => (
   <div>

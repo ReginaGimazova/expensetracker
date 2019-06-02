@@ -9,15 +9,15 @@ const MainPage = () => (
     <MainTemplate>
         <div className="container mainPageContainer">
             <div className="navigationSectionsContainer">
-                <NavigationSection type="left" title="analysis"/>
-                <NavigationSection type="left" title="calendar"/>
-                <NavigationSection type="left" title="budgets" />
+                <NavigationSection type="left" title="analysis" path="/analysis"/>
+                <NavigationSection type="left" title="calendar" path="/calendar"/>
+                <NavigationSection type="left" title="???"/>
             </div>
             <img className="image" src={laptopImage} alt="laptop" />
             <div className="navigationSectionsContainer">
-                <NavigationSection type="right" title="ok to spend"/>
-                <NavigationSection type="right" title="spending"/>
-                <NavigationSection type="right" title="???"/>
+                <NavigationSection type="right" title="budgets" path="/budgets" />
+                <NavigationSection type="right" title="ok to spend" path="/okToSpend"/>
+                <NavigationSection type="right" title="spending" path="/spending" />
             </div>
         </div>
     </MainTemplate>
