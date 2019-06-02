@@ -1,0 +1,20 @@
+.calendar_type_day {
+    height: inherit;
+    width: 100%;
+    margin-top: 50px;
+    position: relative;
+}
+
+.calendar__cell_type_day {
+    height: 50px;
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+    vertical-align: top;
+    border: 1px gainsboro solid;
+    color: var(--dark-gray);
+}
+
+table {
+    border-collapse: collapse;
+}

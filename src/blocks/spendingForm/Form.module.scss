@@ -1,0 +1,23 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+}
+
+.input__container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.input {
+  height: 20px;
+  padding: 5px;
+  border-radius: 2px;
+  border: 1px var(--light-gray) solid;
+  font-size: 14px;
+  font-family: var(--font);
+  color: var(--dark-gray);
+}

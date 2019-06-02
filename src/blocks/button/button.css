@@ -1,0 +1,32 @@
+:root {
+  --yellow: #f7ca67;
+  --primary: #618b44;
+  --gray: #a08f87;
+  --light-gray: #eae9e5;
+  --dark-gray: #5f5c58;
+  --blue: #597f8a;
+  --light-blue: #b4bfbf;
+  --dark-blue: #293844;
+  --font: Roboto, sans-serif ;
+}
+
+.button, .button_submit {
+  width: max-content;
+  min-width: 150px;
+  font-size: 16px;
+  font-weight: normal;
+  padding: 8px 15px;
+  margin: 50px auto;
+  background-color: var(--yellow);
+  border-radius: 3px;
+  border: 1px solid var(--yellow);
+  color: var(--dark-gray);
+  font-family: var(--font);
+}
+.button_submit {
+  background-color: var(--primary);
+  border: 1px solid var(--primary);
+  color: white;
+}
+
+/*# sourceMappingURL=button.css.map */

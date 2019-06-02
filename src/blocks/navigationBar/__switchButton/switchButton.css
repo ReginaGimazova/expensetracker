@@ -1,0 +1,15 @@
+.navigation-button {
+  width: max-content;
+  font-size: 22px;
+  border: none;
+  background: none;
+  color: #616161;
+  outline: none;
+  cursor: pointer;
+}
+.navigation-button:hover {
+  color: #fea521;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=switchButton.css.map */

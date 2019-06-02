@@ -1,0 +1,25 @@
+.calendar__header {
+  width: inherit;
+  margin-bottom: 20px;
+}
+.calendar__header_type_simple {
+  width: calc(100%/7);
+  font-weight: bolder;
+  color: var(--dark-gray);
+  font-size: 14px;
+  min-width: 150px;
+  font-family: var(--font);
+}
+.calendar__header_type_composite {
+  font-size: 14px;
+  font-weight: bolder;
+  color: var(--dark-gray);
+  font-family: var(--font);
+}
+.calendar__header_type_composite p {
+  font-size: 20px;
+  margin: 5px 0;
+  font-weight: normal;
+}
+
+/*# sourceMappingURL=calendar__header.css.map */

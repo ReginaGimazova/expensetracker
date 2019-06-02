@@ -1,0 +1,35 @@
+@import url(https://fonts.googleapis.com/icon?family=Material+Icons);
+.calendar__label {
+  width: 100%;
+  margin-top: 5px;
+  color: #616161;
+  padding: 5px 0;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: bold;
+  font-family: var(--font);
+}
+.calendar__label_notBlock {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.calendar__label_notBlock:hover {
+  background-color: #F0F2F4;
+  border-radius: 5px;
+  font-weight: bolder;
+}
+.calendar__label_notBlock:before {
+  margin-right: 10px;
+  font-family: "Material Icons";
+  content: "lens";
+  color: #EA736A;
+}
+.calendar__label_block {
+  background-color: #EA736A;
+  color: #ffffff;
+  border-radius: 4px;
+  text-align: left;
+}
+
+/*# sourceMappingURL=calendar__label.css.map */

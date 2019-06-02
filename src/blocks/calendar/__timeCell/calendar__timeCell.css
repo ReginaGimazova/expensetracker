@@ -1,0 +1,8 @@
+.calendar__cell_time {
+    width: 50px;
+    height: 40px;
+    vertical-align: top;
+    color: #616161;
+    font-size: 12px;
+    margin-top: -5px;
+}
