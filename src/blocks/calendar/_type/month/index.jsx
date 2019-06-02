@@ -95,7 +95,7 @@ class CalendarMonth extends Component {
                                     key={spending.id}
                                     type='month'
                                 >
-                                    {this.displayEventInfo(spending.date)}
+                                    {spending.cost}
                                 </Event>
                             )
                         ))}

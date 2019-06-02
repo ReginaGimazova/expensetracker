@@ -99,7 +99,7 @@ class CalendarWeek extends Component {
                        >
                            {data.map((spending) => (
                                this.checkEventDate(spending.date, dateFns.addDays(startDate, d), time ) && (
-                                   <Event event={spending} handleEvent={this.props.handleEvent} key={spending.id}>{this.displayEventInfo(spending.date)}</Event>
+                                   <Event event={spending} handleEvent={this.props.handleEvent} key={spending.id}>{spending.cost}</Event>
                                )
                            ))}
                        </td>
@@ -126,7 +126,7 @@ class CalendarWeek extends Component {
                     prevClick={this.prevWeek}
                     nextClick={this.nextWeek}
                 />
-                <div className="calendar-container">
+                <div className="flexContainer">
                     <table className="calendar_type_week">
                         <CalendarHeader weekDays={this.weekDays()} days={this.days()} leftFirstColumn="true"/>
                         <tbody>

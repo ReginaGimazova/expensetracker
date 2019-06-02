@@ -76,7 +76,7 @@ class CalendarDay extends Component {
                     >
                         {data.map((spending) => (
                             this.checkEventDate(spending.date, time) && (
-                                <Event event={spending} handleEvent={this.props.handleEvent} key={spending.id} >{this.displayEventInfo(spending.date)}</Event>
+                                <Event event={spending} handleEvent={this.props.handleEvent} key={spending.id} >{spending.cost}</Event>
                             )
                         ))}
                         
@@ -102,7 +102,7 @@ class CalendarDay extends Component {
                     prevClick={this.prevDay}
                     nextClick={this.nextDay}
                 />
-                <div className="calendar-container">
+                <div className="flexContainer">
                     <table className="calendar_type_day">
                         <CalendarHeader day={this.state.currentDay.getDate()} weekDay={this.getWeekDay()} leftFirstColumn="true"/>
                         <tbody>
