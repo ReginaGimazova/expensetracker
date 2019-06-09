@@ -5,7 +5,6 @@
   font-weight: normal;
   font-family: var(--font);
   color: var(--dark-gray);
-  background-color: #fbfaf6;
   width: 100%;
   padding: 20px;
   border-radius: 0;
@@ -16,8 +15,6 @@
 .react-tabs .react-tabs__tab--selected {
   background-color: var(--light-gray);
   position: static;
-  color: var(--dark-blue);
-  font-weight: bold;
 }
 
 .react-tabs .react-tabs__tab-list {
@@ -29,30 +26,8 @@
   margin: 0;
 }
 
-.container {
-  width: 100%;
-}
-
-.formContainer {
-  height: max-content;
-  margin: auto;
-  width: 500px;
-  background-color: var(--light-gray);
-  border-radius: 3px;
-}
-
-.flexContainer {
-  display: flex;
-}
-
-.calendarContainer {
-  width: 100%;
-  overflow-x: scroll;
-  -webkit-overflow-scrolling: touch;
-}
-
 .icon {
-  color: var(--light-gray);
+  color: var(--dark-blue);
   font-size: 20px;
   margin-bottom: 13px;
   margin-right: 10px;
@@ -64,30 +39,42 @@
   margin: 50px;
 }
 
-.navigationSectionsContainer {
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+.container_flex {
   display: flex;
-  flex-direction: column;
-  height: 500px;
-  flex: 1;
+}
+
+.formContainer {
+  height: max-content;
+  width: 500px;
+  background-color: var(--white);
+  border-radius: 3px;
+}
+
+.calendarContainer {
+  width: 100%;
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+.contentWrap_white {
+  background-color: var(--white);
+}
+
+.contentWrap {
+  flex: 4;
   padding: 50px;
-  justify-content: space-around;
-}
-
-.mainPageContainer {
   display: flex;
-  align-items: center;
-  justify-content: space-around;
-  margin: 100px 0 ;
+  flex-wrap: wrap;
+  margin: 20px 100px;
+  justify-content: center;
 }
 
-.calendarPageContainer {
-  width: 65%;
-  margin: 100px auto;
-}
-
-
-@media all and (max-width: 768px) {
-  .image {
-    display: none;
-  }
+.contentWrap_small {
+  width: 60%;
+  margin: 0 auto;
 }

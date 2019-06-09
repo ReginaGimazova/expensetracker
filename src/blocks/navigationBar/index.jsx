@@ -1,13 +1,18 @@
 import React from "react";
-import NavigationButton from "./__switchButton";
+import NavigationBarSection from './__section';
 import "./navigationBar.css";
+import NavigationBarItem from './__item';
 
-const CalendarNav = props => (
-  <div className="calendar__nav">
-    <NavigationButton type="prev" prevClick={props.prevClick} />
-    <NavigationButton type="next" nextClick={props.nextClick} />
-    <h2 className="calendar__nav__title">{props.date}</h2>
-  </div>
+const NavigationBar = () => (
+  <aside className="navigationBar">
+    <NavigationBarSection>
+        <NavigationBarItem path="/analysis" className="navigationBar__item">Expense analysis</NavigationBarItem>
+        <NavigationBarItem path="/history" className="navigationBar__item">Expense history</NavigationBarItem>
+        <NavigationBarItem path="/income" className="navigationBar__item">Income</NavigationBarItem>
+        <NavigationBarItem path="/okToSpend" className="navigationBar__item">Ok to spend</NavigationBarItem>
+        <NavigationBarItem path="/expense" className="navigationBar__item">Expense</NavigationBarItem>
+    </NavigationBarSection>
+  </aside>
 );
 
-export default CalendarNav;
+export default NavigationBar;

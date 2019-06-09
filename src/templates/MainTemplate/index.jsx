@@ -5,7 +5,9 @@ import Header from "../../blocks/header";
 const MainTemplate = ({ children }) => (
   <div className="template">
     <Header />
-    {children}
+    <div className="template__content">
+        {children}
+    </div>
   </div>
 );
 

@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import dateFns from "date-fns";
 import CalendarHeader from '../../__header/calendar__header'
-import CalendarNav from "../../../navigationBar";
+import CalendarNav from "../../__navigationBar";
 import Event from '../../__label/calendar__label';
 
 import './calendar_type_month.css';

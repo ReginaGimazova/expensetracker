@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import dateFns from "date-fns";
 import CalendarHeader from '../../__header/calendar__header'
-import CalendarNav from "../../../navigationBar";
+import CalendarNav from "../../__navigationBar";
 import TimeCell from '../../__timeCell/calendar__timeCell';
 import Event from "../../__label/calendar__label";
 
@@ -102,7 +102,7 @@ class CalendarDay extends Component {
                     prevClick={this.prevDay}
                     nextClick={this.nextDay}
                 />
-                <div className="flexContainer">
+                <div className="container_flex">
                     <table className="calendar_type_day">
                         <CalendarHeader day={this.state.currentDay.getDate()} weekDay={this.getWeekDay()} leftFirstColumn="true"/>
                         <tbody>

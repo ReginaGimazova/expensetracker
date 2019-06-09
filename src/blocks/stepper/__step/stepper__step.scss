@@ -1,0 +1,13 @@
+.step {
+  font-family: var(--font);
+  font-size: 16px;
+  color: var(--gray);
+  font-weight: bold;
+  padding: 20px;
+  
+  &_active {
+    color: var(--dark-gray);
+    font-size: 18px;
+    border-left: 2px solid var(--yellow);
+  }
+}

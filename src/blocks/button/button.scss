@@ -7,16 +7,6 @@
   font-weight: normal;
   padding: 8px 15px;
   margin: 50px auto;
-  background-color: var(--yellow);
-  border-radius: 3px;
-  border: 1px solid var(--yellow);
-  color: var(--dark-gray);
+  border-radius: 20px;
   font-family: var(--font);
-  
-  &_submit {
-     @extend .button;
-     background-color: var(--primary);
-     border: 1px solid var(--primary);
-     color: white;
-  }
 }

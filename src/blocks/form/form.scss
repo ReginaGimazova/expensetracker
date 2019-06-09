@@ -1,0 +1,13 @@
+.form__group {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0;
+}
+
+.form__title {
+  color: var(--dark-gray);
+  box-shadow: 0 4px 2px -2px var(--light-gray_v2);
+  padding: 5px 0;
+  font-family: var(--font);
+  font-size: 20px;
+}

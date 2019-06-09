@@ -1,15 +1,14 @@
 import React, { Component } from "react";
-import Input from "../input";
-import Label from "../input/__label";
-import Button from "../button";
+import Input from "../../../input";
+import Label from "../../../input/__label";
+import Button from "../../../button";
 import "./authForm.css";
 
 class Form extends Component {
   render() {
-    const { formTitle, buttonText } = this.props;
     return (
       <div>
-        <h1 className="authForm__title">{formTitle}</h1>
+        <h1 className="authForm__title">Log in</h1>
         <form className="authForm">
           <div className="authForm__field">
             <Label>Name</Label>
@@ -19,7 +18,7 @@ class Form extends Component {
             <Label>Password</Label>
             <Input id="password" type="password" />
           </div>
-          <Button type="submit">{buttonText}</Button>
+          <Button type="submit">log in</Button>
         </form>
       </div>
     );

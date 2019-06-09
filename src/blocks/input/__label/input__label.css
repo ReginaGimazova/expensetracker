@@ -1,10 +1,9 @@
 .input__label {
-  margin-left: 5px;
-  margin-right: auto;
-  color: var(--dark-gray);
+  margin: 5px;
+  color: var(--gray);
   font-weight: bold;
   font-size: 14px;
   font-family: var(--font);
 }
 
-/*# sourceMappingURL=input__label.cssbel.css.map */
+/*# sourceMappingURL=input__label.css.map */

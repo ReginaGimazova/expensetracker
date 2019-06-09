@@ -1,0 +1,71 @@
+[
+  {
+    "id": 0,
+    "name": "food"
+  },
+  {
+    "id": 1,
+    "name": "transport"
+  },
+  {
+    "id": 5,
+    "name": "entertainment"
+  },
+  {
+    "id": 14,
+    "name": "health"
+  },
+  {
+    "id": 2,
+    "name": "clothing"
+  },
+  {
+    "id": 6,
+    "name": "beauty"
+  },
+  {
+    "id": 13,
+    "name": "education"
+  },
+  {
+    "id": 8,
+    "name": "home"
+  },
+  {
+    "id": 4,
+    "name": "baby"
+  },
+  {
+    "id": 9,
+    "name": "pet"
+  },
+  {
+    "id": 3,
+    "name": "rental"
+  },
+  {
+    "id": 7,
+    "name": "telephone"
+  },
+  {
+    "id": 10,
+    "name": "cigarette"
+  },
+  {
+    "id": 11,
+    "name": "alcohol"
+  },
+  {
+    "id": 12,
+    "name": "travel"
+  },
+
+  {
+    "id": 15,
+    "name": "gift"
+  },
+  {
+    "id": 16,
+    "name": "fitness"
+  }
+]

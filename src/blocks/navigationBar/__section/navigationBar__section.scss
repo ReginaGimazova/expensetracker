@@ -1,0 +1,8 @@
+.navigationBar__section {
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 30px 0;
+  border-bottom: 2px solid var(--gray);
+}

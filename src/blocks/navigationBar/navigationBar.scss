@@ -1,14 +1,10 @@
-.calendar__nav {
-    display: flex;
-    margin: 5rem 0 2rem 0;
-    justify-content: center;
-    align-items: center;
-    
-    &__title {
-        margin: 0 50px;
-        font-weight: normal;
-        color: #616161;
-        font-size: 20px;
-        font-family: var(--font);
-    }
+.navigationBar {
+  display: flex;
+  height: 100%;
+  width: 500px;
+  flex: 1;
+  flex-direction: column;
+  background-color: var(--white);
+  box-shadow: 2px 2px 2px var(--gray);
+  
 }
