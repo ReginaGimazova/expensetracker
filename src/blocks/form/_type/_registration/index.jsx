@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import StepOne from "./__stepOne";
 import StepTwo from "./__stepTwo";
-import StepThree from "./__stepThree";
 import Stepper from "../../../stepper";
 import Button from "../../../button";
 import "../../../../stylesheets/main.css";
@@ -14,7 +13,10 @@ class MasterForm extends Component {
       currentStep: 0,
       email: "",
       username: "",
-      password: ""
+      password: "",
+      income: 0,
+      expenseTypes: [],
+      notifications: false
     };
   }
 
@@ -37,7 +39,7 @@ class MasterForm extends Component {
 
   _next = () => {
     let currentStep = this.state.currentStep;
-    currentStep = currentStep >= 1 ? 2 : currentStep + 1;
+    currentStep = currentStep >= 1 ? 1 : currentStep + 1;
     this.setState({
       currentStep: currentStep
     });
@@ -60,6 +62,7 @@ class MasterForm extends Component {
       return (
         <Button
           onclick={this._prev}
+          type="prev"
         >
           Previous
         </Button>
@@ -74,6 +77,7 @@ class MasterForm extends Component {
       return (
         <Button
           onclick={this._next}
+          type="next"
         >
           Next
         </Button>
@@ -81,12 +85,15 @@ class MasterForm extends Component {
     }
     return null;
   }
-
+2
   render() {
     const steps = ["User Profile", "Budgets", ""];
     return (
       <div className="contentWrap contentWrap_small ">
-        <Stepper currentStep={this.state.currentStep} steps={steps} />
+        <div className="stepper_wrap">
+          <h2 className="form__title">Registration Form</h2>
+          <Stepper currentStep={this.state.currentStep} steps={steps} />
+        </div>
         <form onSubmit={this.handleSubmit} className="form_type_registration">
           <h2 className="form__title">{steps[this.state.currentStep]}</h2>
           <StepOne
@@ -100,15 +107,14 @@ class MasterForm extends Component {
           <StepTwo
             currentStep={this.state.currentStep}
             handleChange={this.handleChange}
-            username={this.state.username}
+            income={this.state.income}
+            notifications={this.state.notifications}
+            expenseTypes={this.state.expenseTypes}
           />
-          <StepThree
-            currentStep={this.state.currentStep}
-            handleChange={this.handleChange}
-            password={this.state.password}
-          />
-          {this.previousButton()}
-          {this.nextButton()}
+         <div className="container_flex">
+           {this.previousButton()}
+           {this.nextButton()}
+         </div>
         </form>
       </div>
     );

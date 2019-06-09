@@ -1,12 +1,10 @@
 import React from "react";
 import PropTypes from "prop-types";
 import "./button.css";
-import "./_type/_submit/button_type_submit.css";
-import "./_type/_yellow/button_type_yellow.css";
 
 const Button = ({ onclick, icon, children, type }) => (
   <button
-    className={`button ${type === "submit" ? "button_type_submit" : "button_type_yellow"}`}
+    className={`button ${type === "next" ? "button_right button_yellow" : "prev" ? "button_left" : "button_submit"}`}
     type="button"
     onClick={onclick}
   >
@@ -26,5 +24,4 @@ Button.propTypes = {
 Button.defaultProps = {
   onclick: undefined,
   icon: "",
-  type: "",
 };

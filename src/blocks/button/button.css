@@ -17,11 +17,31 @@
   width: max-content;
   min-width: 150px;
   font-size: 16px;
-  font-weight: normal;
+  font-weight: bold;
   padding: 8px 15px;
-  margin: 50px auto;
   border-radius: 20px;
   font-family: var(--font);
+  border: 2px solid var(--light-gray);
+  background-color: var(--white);
+  color: var(--gray);
+  outline: none;
+  margin: auto;
+}
+.button_submit {
+  background-color: var(--primary);
+  border: 1px solid var(--primary);
+  color: white;
+}
+.button_yellow {
+  background-color: var(--yellow);
+  border: 2px solid var(--yellow);
+  color: white;
+}
+.button_right {
+  margin-left: auto;
+}
+.button_left {
+  margin-right: auto;
 }
 
 /*# sourceMappingURL=button.css.map */

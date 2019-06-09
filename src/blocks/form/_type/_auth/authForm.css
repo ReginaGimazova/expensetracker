@@ -1,24 +1,12 @@
-.authForm {
+.form_type_auth {
+  background-color: white;
+  padding: 50px;
   display: flex;
   flex-direction: column;
-  width: 350px;
-  padding: 20px 80px;
-}
-.authForm__title {
-  margin: 80px 0 50px 0;
-  font-weight: 400;
-  font-size: 23px;
-  text-align: center;
-  color: var(--dark-blue);
-  font-family: var(--font);
-}
-.authForm__field {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  margin: 10px 0;
+  justify-content: space-evenly;
+  min-height: 500px;
+  width: 600px;
+  margin: auto;
 }
 
-/*# sourceMappingURL=form.css.map */
+/*# sourceMappingURL=authForm.css.map */

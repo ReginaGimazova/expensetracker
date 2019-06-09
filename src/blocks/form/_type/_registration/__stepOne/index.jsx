@@ -9,7 +9,7 @@ const FormTypeRegistrationStepOne = props => {
     return null;
   }
   return (
-    <div>
+    <div className="container_flex">
       <div className="form__group">
         <Label htmlFor="email">Email</Label>
         <Input

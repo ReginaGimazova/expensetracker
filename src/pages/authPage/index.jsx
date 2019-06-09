@@ -6,7 +6,7 @@ import Form from "../../blocks/form/_type/_auth";
 
 const MainPage = () => (
   <MainTemplate>
-    <div className="formContainer">
+    <div className="container">
       <Form />
     </div>
   </MainTemplate>
