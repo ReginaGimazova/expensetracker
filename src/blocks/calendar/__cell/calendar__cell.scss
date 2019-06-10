@@ -1,0 +1,29 @@
+.calendar__cell_time {
+  width: 50px;
+  height: 40px;
+  vertical-align: top;
+  color: #616161;
+  font-size: 12px;
+  margin-top: -5px;
+}
+
+.calendar__cell_type_day {
+  height: 50px;
+  width: 100%;
+  margin-top: 10px;
+  text-align: center;
+  vertical-align: top;
+  border: 1px gainsboro solid;
+  color: var(--dark-gray);
+}
+
+.calendar__cell_type_week {
+  height: 50px;
+  width: calc(100% / 7);
+  margin-top: 10px;
+  text-align: center;
+  vertical-align: top;
+  border: 1px gainsboro solid;
+  color: #616161;
+  min-width: 120px;
+}

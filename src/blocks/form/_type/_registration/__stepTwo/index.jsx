@@ -25,17 +25,6 @@ const FormTypeRegistrationStepTwo = props => {
                 <Label htmlFor="expenseTypes">Expense types</Label>
             </div>
             
-            <div className="form__group">
-                <Label htmlFor="password">Password</Label>
-                <Input
-                    id="password"
-                    name="password"
-                    type="password"
-                    placeholder="Enter your password"
-                    value={props.password}
-                    onChange={props.handleChange}
-                />
-            </div>
         </div>
     );
 };

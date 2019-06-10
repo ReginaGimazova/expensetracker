@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import dateFns from "date-fns";
 import CalendarHeader from '../../__header/calendar__header'
 import CalendarNav from "../../__navigationBar";
-import TimeCell from '../../__timeCell/calendar__timeCell';
 import Event from "../../__label/calendar__label";
 
 import '../../../../stylesheets/main.css'
@@ -90,7 +89,9 @@ class CalendarWeek extends Component {
         times.map((time) => (
             rows.push(
                <tr key={time}>
-                   <TimeCell>{time}</TimeCell>
+                   <td className="calendar__cell_time">
+                       {time}
+                   </td>
                    {days.map((d) => (
                        <td
                            className="calendar__cell_type_week"
@@ -120,7 +121,7 @@ class CalendarWeek extends Component {
     
     render() {
         return(
-            <div className="container">
+            <div className="container_calendar">
                 <CalendarNav
                     date={this.dateToShow()}
                     prevClick={this.prevWeek}

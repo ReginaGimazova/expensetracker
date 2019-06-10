@@ -2,10 +2,10 @@ import React, {Component} from 'react';
 import dateFns from "date-fns";
 import CalendarHeader from '../../__header/calendar__header'
 import CalendarNav from "../../__navigationBar";
-import TimeCell from '../../__timeCell/calendar__timeCell';
 import Event from "../../__label/calendar__label";
 
 import "./calendar_type_day.css";
+import "../../__cell/calendar__cell.css";
 import '../../../../stylesheets/main.css';
 
 class CalendarDay extends Component {
@@ -69,7 +69,9 @@ class CalendarDay extends Component {
         times.map((time) => (
             rows.push(
                 <tr key={time}>
-                    <TimeCell>{time}</TimeCell>
+                    <td className="calendar__cell_time">
+                        {time}
+                    </td>
                     <td
                         className="calendar__cell_type_day"
                         onClick={() => this.onDateClick(dateFns.parse(day))}

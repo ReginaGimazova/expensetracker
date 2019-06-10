@@ -3,17 +3,9 @@
     width: 100%;
     margin-top: 50px;
     position: relative;
+    max-height: 700px;
+    overflow-y: scroll;
     
-}
-
-.calendar__cell_type_week {
-    height: 50px;
-    width: calc(100% / 7);
-    margin-top: 10px;
-    text-align: center;
-    vertical-align: top;
-    border: 1px gainsboro solid;
-    color: #616161;
 }
 
 table {
