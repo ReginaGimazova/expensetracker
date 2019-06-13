@@ -2,9 +2,9 @@ import React from "react";
 import PropTypes from "prop-types";
 import "./button.css";
 
-const Button = ({ onclick, icon, children, type }) => (
+const Button = ({ onclick, icon, children, className }) => (
   <button
-    className={`button ${type === "next" ? "button_right button_yellow" : "prev" ? "button_left" : "button_submit"}`}
+    className={`button ${className}`}
     type="button"
     onClick={onclick}
   >

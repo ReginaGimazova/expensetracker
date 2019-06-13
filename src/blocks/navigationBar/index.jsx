@@ -10,7 +10,7 @@ const NavigationBar = () => (
         <NavigationBarItem path="/history" className="navigationBar__item">Expense history</NavigationBarItem>
         <NavigationBarItem path="/income" className="navigationBar__item">Income</NavigationBarItem>
         <NavigationBarItem path="/okToSpend" className="navigationBar__item">Ok to spend</NavigationBarItem>
-        <NavigationBarItem path="/expense" className="navigationBar__item">Expense</NavigationBarItem>
+        <NavigationBarItem path="/expense" className="navigationBar__item">Add expenses</NavigationBarItem>
     </NavigationBarSection>
   </aside>
 );

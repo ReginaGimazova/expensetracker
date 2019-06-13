@@ -5,12 +5,16 @@ import Stepper from "../../../stepper";
 import Button from "../../../button";
 import "../../../../stylesheets/main.css";
 import "./form_type_registration.css";
+import "../../../button/button.css";
+import CustomLink from "../../../link";
 
 class MasterForm extends Component {
   constructor(props) {
     super(props);
     this.state = {
       currentStep: 0,
+      firstStepIsComplete: false,
+      secondStepIsComplete: false,
       email: "",
       username: "",
       password: "",
@@ -60,9 +64,8 @@ class MasterForm extends Component {
     let currentStep = this.state.currentStep;
     if (currentStep !== 0) {
       return (
-        <Button
+        <Button className="button_prev"
           onclick={this._prev}
-          type="prev"
         >
           Previous
         </Button>
@@ -75,27 +78,28 @@ class MasterForm extends Component {
     let currentStep = this.state.currentStep;
     if (currentStep < 2) {
       return (
-        <Button
+        <Button className="button_next button_yellow"
           onclick={this._next}
-          type="next"
         >
-          Next
+          {currentStep !== 1 && "Next" || "Create account"}
         </Button>
       );
     }
     return null;
   }
-2
   render() {
-    const steps = ["User Profile", "Budgets", ""];
+    const steps = ["User Profile", "Budgets"];
     return (
       <div className="contentWrap contentWrap_small ">
         <div className="stepper_wrap">
           <h2 className="form__title">Registration Form</h2>
-          <Stepper currentStep={this.state.currentStep} steps={steps} />
+          <Stepper activeStep={this.state.currentStep} steps={steps} />
         </div>
         <form onSubmit={this.handleSubmit} className="form_type_registration">
-          <h2 className="form__title">{steps[this.state.currentStep]}</h2>
+          <div>
+            <h2 className="form__title">{steps[this.state.currentStep]}</h2>
+            <CustomLink path="/auth">if you already have account Log in</CustomLink>
+          </div>
           <StepOne
             currentStep={this.state.currentStep}
             handleChange={this.handleChange}

@@ -31,17 +31,19 @@
   background-color: var(--primary);
   border: 1px solid var(--primary);
   color: white;
+  width: 200px;
+  margin: 0 auto;
 }
 .button_yellow {
   background-color: var(--yellow);
   border: 2px solid var(--yellow);
   color: white;
 }
-.button_right {
+.button_next {
   margin-left: auto;
   margin-right: 0;
 }
-.button_left {
+.button_prev {
   margin-right: auto;
   margin-left: 0;
 }

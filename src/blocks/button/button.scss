@@ -18,6 +18,8 @@
     background-color: var(--primary);
     border: 1px solid var(--primary);
     color: white;
+    width: 200px;
+    margin: 0 auto;
   }
   
   &_yellow {
@@ -26,12 +28,12 @@
     color: white;
   }
   
-  &_right {
+  &_next {
     margin-left: auto;
     margin-right: 0;
   }
   
-  &_left {
+  &_prev {
     margin-right: auto;
     margin-left: 0;
   }
