@@ -56,7 +56,7 @@ class CalendarMonth extends Component {
     };
     
     renderDays = () => {
-        const {currentMonth, selectDate} = this.state;
+        const {currentMonth} = this.state;
         const {data} = this.props;
         const monthStart = dateFns.startOfMonth(currentMonth);
         const monthEnd = dateFns.endOfMonth(currentMonth);
@@ -87,6 +87,7 @@ class CalendarMonth extends Component {
                             <span>{formattedDate}</span>
                         </div>
                         
+                        {/* eslint-disable-next-line no-loop-func */}
                         {data.map((spending) => (
                             this.checkEventDate(spending.date, day) && (
                                 <Event

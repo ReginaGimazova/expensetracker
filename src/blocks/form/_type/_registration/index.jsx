@@ -25,7 +25,6 @@ class MasterForm extends Component {
 
   handleChange = event => {
     const { name, value } = event.target;
-    console.log (name, value)
     this.setState({
       [name]: value
     });
@@ -80,6 +79,7 @@ class MasterForm extends Component {
         <Button className="button_next button_yellow"
           onclick={this._next}
         >
+          {/* eslint-disable-next-line no-mixed-operators */}
           {currentStep !== 1 && "Next" || "Create account"}
         </Button>
       );

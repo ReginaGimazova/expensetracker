@@ -1,7 +1,9 @@
 import React from 'react';
+// eslint-disable-next-line no-unused-vars
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "@fortawesome/free-solid-svg-icons"
 import "@fortawesome/free-regular-svg-icons"
+// eslint-disable-next-line no-unused-vars
 import {faCheckCircle} from "@fortawesome/free-solid-svg-icons";
 import "./stepper__step.css";
 
