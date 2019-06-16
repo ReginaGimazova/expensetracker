@@ -1,0 +1,8 @@
+.navigationBar__section {
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+
+/*# sourceMappingURL=navigationBar__section.css.map */

@@ -23,3 +23,8 @@ yarn-debug.log*
 yarn-error.log*
 
 .idea/
+
+# scss cache files ignore
+.sass-cache
+.sass-cache/*
+*.css.map

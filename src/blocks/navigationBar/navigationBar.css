@@ -1,0 +1,11 @@
+.navigationBar {
+  display: flex;
+  min-height: 100%;
+  width: 500px;
+  flex: 1;
+  flex-direction: column;
+  background-color: var(--white);
+  box-shadow: 2px 2px 2px var(--light-gray);
+}
+
+/*# sourceMappingURL=navigationBar.css.map */

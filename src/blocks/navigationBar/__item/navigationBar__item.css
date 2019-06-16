@@ -1,0 +1,18 @@
+.navigationBar__item {
+  font-size: 18px;
+  text-align: left;
+  font-weight: bold;
+  padding: 20px;
+  color: var(--dark-blue);
+  flex: 1;
+  text-decoration: none;
+  font-family: var(--font);
+}
+.navigationBar__item:hover {
+  background-color: var(--light-gray_v2);
+}
+.navigationBar__item:focus {
+  background-color: var(--light-gray_v2);
+}
+
+/*# sourceMappingURL=navigationBar__item.css.map */
