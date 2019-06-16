@@ -4,7 +4,6 @@ import StepTwo from "./__stepTwo";
 import Stepper from "../../../stepper";
 import Button from "../../../button";
 import "../../../../stylesheets/main.css";
-import "./form_type_registration.css";
 import "../../../button/button.css";
 import CustomLink from "../../../link";
 
@@ -95,7 +94,7 @@ class MasterForm extends Component {
           <h2 className="form__title">Registration Form</h2>
           <Stepper activeStep={this.state.currentStep} steps={steps} />
         </div>
-        <form onSubmit={this.handleSubmit} className="form_type_registration">
+        <form onSubmit={this.handleSubmit} className="form form_type_registration">
           <div>
             <h2 className="form__title">{steps[this.state.currentStep]}</h2>
             <CustomLink path="/auth">if you already have account Log in</CustomLink>

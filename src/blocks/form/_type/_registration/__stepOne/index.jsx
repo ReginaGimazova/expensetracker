@@ -2,7 +2,6 @@ import React from "react";
 import Input from "../../../../input";
 import Label from "../../../../input/__label";
 import "../../../form.css";
-import "../form_type_registration.css";
 
 const FormTypeRegistrationStepOne = props => {
   if (props.currentStep !== 0) {
