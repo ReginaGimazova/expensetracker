@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Route, Switch, HashRouter } from "react-router-dom";
+import { Route, Switch, BrowserRouter} from "react-router-dom";
 import AuthPage from "./pages/authPage";
 import MainPage from "./pages/mainPage";
 import CalendarPage from "./pages/historyPage";
@@ -9,7 +9,7 @@ import RegistrationPage from "./pages/registrationPage";
 class App extends Component {
   render() {
     return (
-        <HashRouter>
+        <BrowserRouter basename={process.env.PUBLIC_URL}>
           <Switch>
             <Route path="/auth" component={AuthPage} exact />
             <Route path="/registration" component={RegistrationPage} exact/>
@@ -17,7 +17,7 @@ class App extends Component {
             <Route path="/history" component={CalendarPage} exact />
             <Route path="/expense" component={ExpensePage} exact/>
           </Switch>
-        </HashRouter>
+        </BrowserRouter>
     );
   }
 }
