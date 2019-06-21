@@ -19,6 +19,5 @@
     "document": true,
     "localStorage": true,
     "navigator": true
-  },
-  "global-require": "warn"
+  }
 }

@@ -1,8 +1,7 @@
 /* eslint-disable no-unused-vars */
-import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import "@fortawesome/free-solid-svg-icons"
-import "@fortawesome/free-regular-svg-icons"
+import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import '@fortawesome/free-regular-svg-icons';
 import {
   faHamburger as food,
   faBusAlt as transport,
@@ -22,21 +21,20 @@ import {
   faGraduationCap,
   faMedkit as health,
   faGift as gift,
-  faDumbbell as fitness
-} from "@fortawesome/free-solid-svg-icons";
-import Button from "../button";
-import expenseTypes from "../../data/expenseType";
-import "./expenseContent.css";
+  faDumbbell as fitness,
+} from '@fortawesome/free-solid-svg-icons';
+import Button from '../button';
+import expenseTypes from '../../data/expenseType';
+import './expenseContent.css';
 
 const ExpenseContent = () => (
-    <section>
-        {expenseTypes.map((type) => (
-            <Button>
-                <FontAwesomeIcon icon={type.name}/>
-                {type.name}
-            </Button>
-        ))}
-       
-    </section>
+  <section>
+    {expenseTypes.map(type => (
+      <Button>
+        <FontAwesomeIcon icon={type.name} />
+        {type.name}
+      </Button>
+    ))}
+  </section>
 );
 export default ExpenseContent;

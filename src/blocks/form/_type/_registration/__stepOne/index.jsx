@@ -1,10 +1,10 @@
-import React from "react";
-import Input from "../../../../input";
-import Label from "../../../../input/__label";
-import "../../../form.css";
+import React from 'react';
+import Input from '../../../../input';
+import Label from '../../../../input/__label';
+import '../../../form.css';
 
-const FormTypeRegistrationStepOne = props => {
-  if (props.currentStep !== 0) {
+const FormTypeRegistrationStepOne = ({ currentStep, username, email, handleChange, password }) => {
+  if (currentStep !== 0) {
     return null;
   }
   return (
@@ -16,8 +16,8 @@ const FormTypeRegistrationStepOne = props => {
           name="email"
           type="email"
           placeholder="Enter your email"
-          value={props.email}
-          onChange={props.handleChange}
+          value={email}
+          onChange={handleChange}
         />
       </div>
       <div className="form__group">
@@ -27,8 +27,8 @@ const FormTypeRegistrationStepOne = props => {
           name="username"
           type="text"
           placeholder="Enter your name"
-          value={props.username}
-          onChange={props.handleChange}
+          value={username}
+          onChange={handleChange}
         />
       </div>
       <div className="form__group">
@@ -38,8 +38,8 @@ const FormTypeRegistrationStepOne = props => {
           name="password"
           type="password"
           placeholder="Enter your password"
-          value={props.password}
-          onChange={props.handleChange}
+          value={password}
+          onChange={handleChange}
         />
       </div>
     </div>

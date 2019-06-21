@@ -1,11 +1,12 @@
-import React, { Component } from "react";
-import Input from "../../../input";
-import Label from "../../../input/__label";
-import Button from "../../../button";
-import "../../form.css";
-import "../../../button/button.css";
-import CustomLink from "../../../link";
+import React, { Component } from 'react';
+import Input from '../../../input';
+import Label from '../../../input/__label';
+import Button from '../../../button';
+import '../../form.css';
+import '../../../button/button.css';
+import CustomLink from '../../../link';
 
+// eslint-disable-next-line react/prefer-stateless-function
 class Form extends Component {
   render() {
     return (

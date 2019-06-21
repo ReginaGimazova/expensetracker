@@ -1,15 +1,16 @@
-import React from "react";
-import "./calendar__header.scss";
+import React from 'react';
+import './calendar__header.scss';
 
 const CalendarHeader = ({ weekDays, days, leftFirstColumn, day, weekDay }) => (
   <thead>
     {weekDays && !days && (
       <tr className="calendar__header">
-        {leftFirstColumn&& <th />}
+        {leftFirstColumn && <th />}
         {weekDays &&
-          weekDays.map((weekDay, key) => (
+          weekDays.map((weekDaysItem, key) => (
+            // eslint-disable-next-line react/no-array-index-key
             <th key={key} className="calendar__header_type_simple">
-              {weekDay}
+              {weekDaysItem}
             </th>
           ))}
       </tr>
@@ -18,9 +19,10 @@ const CalendarHeader = ({ weekDays, days, leftFirstColumn, day, weekDay }) => (
     {days && weekDays && (
       <tr>
         {leftFirstColumn && <th />}
-        {weekDays.map((weekDay, key) => (
+        {weekDays.map((weekDaysItem, key) => (
+          // eslint-disable-next-line react/no-array-index-key
           <th key={key} className="calendar__header_type_composite">
-            {weekDay}
+            {weekDaysItem}
             <p>{days[key]}</p>
           </th>
         ))}
