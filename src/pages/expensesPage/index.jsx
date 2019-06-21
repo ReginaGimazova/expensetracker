@@ -1,18 +1,18 @@
 import React from 'react';
-import MainTemplate from "../../templates/MainTemplate";
-import NavigationBar from "../../blocks/navigationBar";
-import ExpenseContent from "../../blocks/expenseContent";
-import "../../stylesheets/main.css"
+import MainTemplate from '../../templates/MainTemplate';
+import NavigationBar from '../../blocks/navigationBar';
+import ExpenseContent from '../../blocks/expenseContent';
+import '../../stylesheets/main.css';
 
 const expensePage = () => (
-    <MainTemplate>
-        <div className="container_flex container">
-            <NavigationBar/>
-            <div className="contentWrap contentWrap_white">
-                <ExpenseContent/>
-            </div>
-        </div>
-    </MainTemplate>
+  <MainTemplate>
+    <div className="container_flex container">
+      <NavigationBar />
+      <div className="contentWrap contentWrap_white">
+        <ExpenseContent />
+      </div>
+    </div>
+  </MainTemplate>
 );
 
-export default expensePage
+export default expensePage;

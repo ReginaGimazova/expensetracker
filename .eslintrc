@@ -1,6 +1,6 @@
 {
   "extends": ["airbnb", "prettier", "prettier/react"],
-  "plugins": ["babel", "import", "jsx-a11y", "react","prettier"],
+  "plugins": ["prettier"],
   "parser": "babel-eslint",
   "rules": {
     "react/jsx-filename-extension": [
@@ -18,9 +18,7 @@
     "window": true,
     "document": true,
     "localStorage": true,
-    "FormData": true,
-    "FileReader": true,
-    "Blob": true,
     "navigator": true
-  }
+  },
+  "global-require": "warn"
 }
