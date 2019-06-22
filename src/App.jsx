@@ -7,7 +7,7 @@ import ExpensePage from './pages/expensesPage';
 import RegistrationPage from './pages/registrationPage';
 
 const App = () => (
-  <BrowserRouter basename="/expenseTracker">
+  <BrowserRouter basename="/expenseTracker/">
     <Switch>
       <Route path="/auth" component={AuthPage} exact />
       <Route path="/registration" component={RegistrationPage} exact />
