@@ -70,7 +70,7 @@ class CalendarDay extends Component {
     const rows = [];
     const timeFormat = 'HH:mm';
     const startTime = dateFns.startOfDay(currentDay);
-    for (let i = 0; i < 24; +i) {
+    for (let i = 0; i < 24; i += 1) {
       times.push(dateFns.format(dateFns.addHours(startTime, i), timeFormat));
     }
 

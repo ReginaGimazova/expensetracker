@@ -21,8 +21,8 @@ class CalendarWeek extends Component {
   }
 
   dateToShow = () => {
-    const { currentWeek } = this.state;
     const dateFormat = 'MMMM YYYY';
+    const { currentWeek } = this.state;
     return dateFns.format(currentWeek, dateFormat);
   };
 
@@ -45,7 +45,7 @@ class CalendarWeek extends Component {
     const days = [];
     const { currentMonth } = this.state;
     const startDate = dateFns.startOfWeek(currentMonth);
-    for (let i = 0; i < 7; +i) {
+    for (let i = 0; i < 7; i += 1) {
       days.push(dateFns.format(dateFns.addDays(startDate, i), dateFormat));
     }
     return days;
@@ -56,7 +56,7 @@ class CalendarWeek extends Component {
     const dateFormat = 'D';
     const { currentWeek } = this.state;
     const startDate = dateFns.startOfWeek(currentWeek);
-    for (let day = 0; day < 7; +day) {
+    for (let day = 0; day < 7; day += 1) {
       days.push(dateFns.format(dateFns.addDays(startDate, day), dateFormat));
     }
     return days;
@@ -72,9 +72,7 @@ class CalendarWeek extends Component {
 
   displayEventInfo = date => {
     const timeFormat = 'HH:mm';
-    // eslint-disable-next-line no-param-reassign
-    date = new Date(date);
-    return dateFns.format(date, timeFormat);
+    return dateFns.format(new Date(date), timeFormat);
   };
 
   renderTimeBLocks = () => {
@@ -85,13 +83,14 @@ class CalendarWeek extends Component {
     const startDate = dateFns.startOfWeek(new Date());
     const timeFormat = 'HH:mm';
     const startTime = dateFns.startOfDay(currentDay);
-    for (let i = 0; i < 24; +i) {
+    for (let i = 0; i < 24; i += 1) {
       times.push(dateFns.format(dateFns.addHours(startTime, i), timeFormat));
     }
     const day = startDate.getDate();
     const days = Array(7)
       .fill(0)
-      .map((e, i) => +i);
+      // eslint-disable-next-line no-return-assign,no-param-reassign
+      .map((e, i) => (i += 1));
 
     times.map(time =>
       rows.push(

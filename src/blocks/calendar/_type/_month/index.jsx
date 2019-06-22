@@ -45,7 +45,7 @@ class CalendarMonth extends Component {
     const days = [];
     const { currentMonth } = this.state;
     const startDate = dateFns.startOfWeek(currentMonth);
-    for (let i = 0; i < 7; +i) {
+    for (let i = 0; i < 7; i += 1) {
       days.push(dateFns.format(dateFns.addDays(startDate, i), dateFormat));
     }
     return days;
@@ -73,7 +73,7 @@ class CalendarMonth extends Component {
     let formattedDate = '';
 
     while (day <= endDate) {
-      for (let i = 0; i < 7; +i) {
+      for (let i = 0; i < 7; i += 1) {
         formattedDate = dateFns.format(day, dateFormat);
         const cloneDay = day;
         days.push(
@@ -90,6 +90,7 @@ class CalendarMonth extends Component {
 
             {/* eslint-disable-next-line no-loop-func */}
             {data.map(
+              // eslint-disable-next-line no-loop-func
               spending =>
                 this.checkEventDate(spending.date, day) && (
                   <Event event={spending} handleEvent={handleEvent} key={spending.id} type="month">
