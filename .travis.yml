@@ -8,6 +8,7 @@ before_deploy:
 deploy:
   provider: pages
   skip-cleanup: true
+  local_dir: deploy
   github-token: $GITHUB_TOKEN
   keep-history: true
   on:
