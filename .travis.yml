@@ -3,12 +3,11 @@ node_js: node
 
 before_deploy:
   - npm run build
-  - echo -e "node_modules\npackage-lock.json" > .gitignore
 
 deploy:
   provider: pages
   skip-cleanup: true
-  local_dir: deploy
+  local_dir: build
   github-token: $GITHUB_TOKEN
   keep-history: true
   on:
