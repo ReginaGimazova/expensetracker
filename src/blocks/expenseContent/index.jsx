@@ -24,7 +24,7 @@ import {
   faDumbbell as fitness,
 } from '@fortawesome/free-solid-svg-icons';
 import Button from '../button';
-import expenseTypes from '../../data/expenseType';
+import expenseTypes from '../../data/expenseTypes';
 import './expenseContent.css';
 
 const ExpenseContent = () => (

@@ -9,6 +9,7 @@ deploy:
   skip-cleanup: true
   local_dir: build
   github-token: $GITHUB_TOKEN
+  github-url: https://reginagimazova.github.io/expenseTracker/
   keep-history: true
   on:
     branch: master

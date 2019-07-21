@@ -1,4 +1,4 @@
-@import "../../stylesheets/variables";
+@import '../../stylesheets/variables';
 
 .button {
   width: max-content;
@@ -13,26 +13,27 @@
   color: var(--gray);
   outline: none;
   margin: auto;
-  
+  cursor: pointer;
+
   &_submit {
-    background-color: var(--primary);
-    border: 1px solid var(--primary);
+    background-color: var(--green);
+    border: 1px solid var(--green);
     color: white;
     width: 200px;
     margin: 0 auto;
   }
-  
+
   &_yellow {
     background-color: var(--yellow);
     border: 2px solid var(--yellow);
     color: white;
   }
-  
+
   &_next {
     margin-left: auto;
     margin-right: 0;
   }
-  
+
   &_prev {
     margin-right: auto;
     margin-left: 0;

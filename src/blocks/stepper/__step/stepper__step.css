@@ -4,11 +4,11 @@
   color: var(--gray);
   font-weight: bold;
   padding: 20px 0;
+  cursor: pointer;
 }
 .step_active {
-  color: var(--dark-gray);
+  color: var(--yellow);
   font-size: 18px;
-  border-left: 2px solid var(--yellow);
 }
 
 /*# sourceMappingURL=stepper__step.css.map */

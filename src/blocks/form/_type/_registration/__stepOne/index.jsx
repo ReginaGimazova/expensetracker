@@ -3,7 +3,13 @@ import Input from '../../../../input';
 import Label from '../../../../input/__label';
 import '../../../form.css';
 
-const FormTypeRegistrationStepOne = ({ currentStep, username, email, handleChange, password }) => {
+const FormTypeRegistrationStepOne = ({
+  currentStep,
+  username,
+  email,
+  handleChangeInput,
+  password,
+}) => {
   if (currentStep !== 0) {
     return null;
   }
@@ -17,7 +23,7 @@ const FormTypeRegistrationStepOne = ({ currentStep, username, email, handleChang
           type="email"
           placeholder="Enter your email"
           value={email}
-          onChange={handleChange}
+          onChange={handleChangeInput}
         />
       </div>
       <div className="form__group">
@@ -28,7 +34,7 @@ const FormTypeRegistrationStepOne = ({ currentStep, username, email, handleChang
           type="text"
           placeholder="Enter your name"
           value={username}
-          onChange={handleChange}
+          onChange={handleChangeInput}
         />
       </div>
       <div className="form__group">
@@ -39,7 +45,7 @@ const FormTypeRegistrationStepOne = ({ currentStep, username, email, handleChang
           type="password"
           placeholder="Enter your password"
           value={password}
-          onChange={handleChange}
+          onChange={handleChangeInput}
         />
       </div>
     </div>

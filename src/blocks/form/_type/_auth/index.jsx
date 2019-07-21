@@ -13,7 +13,7 @@ class Form extends Component {
       <form className="form form_type_auth">
         <div>
           <h1 className="form__title">Log in</h1>
-          <CustomLink path="/registration">or create account</CustomLink>
+          <CustomLink path="/registration">or click here to create account</CustomLink>
         </div>
         <div>
           <div className="form__group">

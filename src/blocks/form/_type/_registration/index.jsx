@@ -1,3 +1,5 @@
+/* eslint-disable react/no-unused-state */
+
 import React, { Component } from 'react';
 import StepOne from './__stepOne';
 import StepTwo from './__stepTwo';
@@ -12,9 +14,7 @@ class MasterForm extends Component {
     super(props);
     this.state = {
       currentStep: 0,
-      // eslint-disable-next-line react/no-unused-state
       firstStepIsComplete: false,
-      // eslint-disable-next-line react/no-unused-state
       secondStepIsComplete: false,
       email: '',
       username: '',
@@ -25,7 +25,7 @@ class MasterForm extends Component {
     };
   }
 
-  handleChange = event => {
+  handleChangeInput = event => {
     const { name, value } = event.target;
     this.setState({
       [name]: value,
@@ -52,9 +52,12 @@ class MasterForm extends Component {
     });
   };
 
-  /*
-   * the functions for our button
-   */
+  changeActiveStep = indexOfStep => {
+    this.setState({
+      currentStep: indexOfStep,
+    });
+  };
+
   previousButton() {
     const { currentStep } = this.state;
     if (currentStep !== 0) {
@@ -81,7 +84,7 @@ class MasterForm extends Component {
   }
 
   render() {
-    const steps = ['User Profile', 'Budgets'];
+    const steps = [{ id: 0, name: 'User Profile' }, { id: 1, name: 'Budgets' }];
     const {
       currentStep,
       email,
@@ -95,23 +98,27 @@ class MasterForm extends Component {
       <div className="contentWrap contentWrap_small ">
         <div className="stepper_wrap">
           <h2 className="form__title">Registration Form</h2>
-          <Stepper activeStep={currentStep} steps={steps} />
+          <Stepper
+            activeStep={steps[currentStep]}
+            steps={steps}
+            changeActiveStep={this.changeActiveStep}
+          />
         </div>
         <form onSubmit={this.handleSubmit} className="form form_type_registration">
           <div>
-            <h2 className="form__title">{steps[currentStep]}</h2>
-            <CustomLink path="/auth">if you already have account Log in</CustomLink>
+            <h2 className="form__title">{steps[currentStep].name}</h2>
+            <CustomLink path="/auth">if you already have account click here to Log in</CustomLink>
           </div>
           <StepOne
             currentStep={currentStep}
-            handleChange={this.handleChange}
+            handleChangeInput={this.handleChangeInput}
             email={email}
             username={username}
             password={password}
           />
           <StepTwo
             currentStep={currentStep}
-            handleChange={this.handleChange}
+            handleChangeInput={this.handleChangeInput}
             income={income}
             notifications={notifications}
             expenseTypes={expenseTypes}

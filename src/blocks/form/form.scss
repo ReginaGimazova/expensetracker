@@ -4,35 +4,35 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 500px;
+  min-height: 400px;
 
   &_type_auth {
     width: 600px;
     margin: auto;
-  
+
     .form__group {
       width: 70%;
       margin: 0 auto;
     }
-  
+
     input {
       width: 100%;
     }
   }
-  
+
   &_type_registration {
     flex: 3;
     margin-top: 20px;
     max-width: 800px;
   }
-  
+
   &__group {
     display: flex;
     flex-direction: column;
     padding: 10px 0;
     flex: 1;
   }
-  
+
   &__title {
     color: var(--dark-gray);
     box-shadow: 0 4px 2px -2px var(--light-gray_v2);

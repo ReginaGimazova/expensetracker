@@ -7,7 +7,7 @@ import ExpensePage from './pages/expensesPage';
 import RegistrationPage from './pages/registrationPage';
 
 const App = () => (
-  <BrowserRouter basename={process.env.PUBLIC_URL}>
+  <BrowserRouter basename="https://reginagimazova.github.io/expenseTracker">
     <Switch>
       <Route path="/auth" component={AuthPage} exact />
       <Route path="/registration" component={RegistrationPage} exact />
