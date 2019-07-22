@@ -10,7 +10,7 @@ before_deploy:
 deploy:
   provider: heroku
   api_key:
-    secure: zJ53v/9JGXPldGR4If7/hr18di0Jq9ghz26kxhP6fcBXFpXmtXnRicDmwatK/Vq4WIaeshDz5+/j43oRTTr93H/JXdrQFjGzc5csLrOGuqIBPafOpj6aEIorSHEQ6lGzx1odMcl250DJYTuSEXMeBJsYjYaVJaGRvHlXwZXSPQTKEGPgz/517WDMmy8EM1g2BYiM3ta+HQ1bKYj2salMRVuV5r5jfTzQrOSzR2FeJroqiJjaj4B9nsizgaXNlGTAGLm9XArHD4gU8QIl3+XUD3BTQdw8k5+0KOELBefrNsaElXoYDYlFJ0VroSztaSVlrFLc0JvkzB32sQjvlFpdIVc/L0CZ9OYE5h8viv6/EuIgEGyVTrRoTuh4HJ03lfH+ab2P4uUYCEzyPHmIA0WH8kQOcPIDLUPQp+u+fpvIgBzmzJFwfcJYffiKbQQgAi5QhtPE/pLYTs6yDzBlItUX0eqHtd4nJhB/oIVfRV5bGN8QKhqnLBUNMKJbWZlty73fMuGz76eaYHJTH6jXrswDbrvBS32ZHOgcTIJzxPxxN488j6rXrTdhP9Vm8WQErQ0wzmXcJZ6i6pr4/riRRI21RnNGqTtxhY9WtYY1/8x7882Sznjzn3GkoBdAnfNoMNlMVVmA6/oDiTh/AWeGOoSnqpWymZtFb5AlR/LziLd26Qc=
+    secure: 019c8508-2e9a-4090-8638-6f08931a7e1a
   app: expense-tracker-todo
   skip-cleanup: true
   local_dir: build
