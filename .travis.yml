@@ -9,8 +9,6 @@ deploy:
   api_key:
     secure: 019c8508-2e9a-4090-8638-6f08931a7e1a
   app: expense-tracker-todo
-  skip-cleanup: true
-  keep-history: true
   on:
     branch: master
     repo: ReginaGimazova/expenseTracker
