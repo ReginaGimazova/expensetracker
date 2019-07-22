@@ -9,5 +9,10 @@
   font-family: var(--font);
   color: var(--dark-gray);
 }
+.input::placeholder {
+  color: var(--gray);
+  font-size: 14px;
+  font-weight: 500;
+}
 
 /*# sourceMappingURL=input.css.map */

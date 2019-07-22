@@ -8,4 +8,10 @@
   font-size: 14px;
   font-family: var(--font);
   color: var(--dark-gray);
+
+  &::placeholder {
+    color: var(--gray);
+    font-size: 14px;
+    font-weight: 500;
+  }
 }

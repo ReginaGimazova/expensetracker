@@ -37,7 +37,7 @@ class MasterForm extends Component {
     event.preventDefault();
   };
 
-  _next = () => {
+  next = () => {
     let { currentStep } = this.state;
     currentStep = currentStep >= 1 ? 1 : currentStep + 1;
     this.setState({
@@ -45,7 +45,7 @@ class MasterForm extends Component {
     });
   };
 
-  _prev = () => {
+  prev = () => {
     let { currentStep } = this.state;
     currentStep = currentStep <= 0 ? 0 : currentStep - 1;
     this.setState({
@@ -63,7 +63,7 @@ class MasterForm extends Component {
     const { currentStep } = this.state;
     if (currentStep !== 0) {
       return (
-        <Button className="button_prev" onclick={this._prev}>
+        <Button className="button_prev" onclick={this.prev}>
           Previous
         </Button>
       );
@@ -75,7 +75,7 @@ class MasterForm extends Component {
     const { currentStep } = this.state;
     if (currentStep < 2) {
       return (
-        <Button className="button_next button_yellow" onclick={this._next}>
+        <Button className="button_next button_yellow" onclick={this.next}>
           {/* eslint-disable-next-line no-mixed-operators */}
           {(currentStep !== 1 && 'Next') || 'Create account'}
         </Button>

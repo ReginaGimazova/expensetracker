@@ -31,7 +31,7 @@ const FormTypeRegistrationStepTwo = ({ currentStep, income, handleChangeInput, o
       <div className="form__group form__group_type_number">
         <Label htmlFor="ok_to_spend">Ok to spend</Label>
         <div className="form__group_horizontal">
-          <Input type="text" />
+          <Input type="text" placeholder="Name for your purpose" />
           <Input
             id="ok_to_spend"
             name="ok_to_spend"
