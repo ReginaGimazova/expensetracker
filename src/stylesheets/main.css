@@ -55,14 +55,10 @@
   flex-wrap: wrap;
 }
 
-.container_calendar {
+.calendarContainer_ {
   width: 100%;
   overflow-x: scroll;
   -webkit-overflow-scrolling: touch;
-}
-
-.contentWrap_white {
-  background-color: var(--white);
 }
 
 .contentWrap {
@@ -75,12 +71,16 @@
   height: max-content;
 }
 
+.contentWrap_white {
+  background-color: var(--white);
+}
+
 .contentWrap_small {
   width: 60%;
   margin: 0 auto;
 }
 
-.stepper_wrap {
+.stepperWrap {
   display: flex;
   flex-direction: column;
   flex: 1;

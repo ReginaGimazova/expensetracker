@@ -129,7 +129,7 @@ class CalendarWeek extends Component {
 
   render() {
     return (
-      <div className="container_calendar">
+      <div className="calendarContainer">
         <CalendarNav date={this.dateToShow()} prevClick={this.prevWeek} nextClick={this.nextWeek} />
         <div className="container_flex">
           <table className="calendar_type_week">

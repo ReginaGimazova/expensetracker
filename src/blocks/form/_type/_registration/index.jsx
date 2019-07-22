@@ -19,7 +19,8 @@ class MasterForm extends Component {
       email: '',
       username: '',
       password: '',
-      income: 0,
+      income: 0.0,
+      okToSpend: 0.0,
       expenseTypes: [],
       notifications: false,
     };
@@ -91,12 +92,13 @@ class MasterForm extends Component {
       username,
       password,
       income,
+      okToSpend,
       notifications,
       expenseTypes,
     } = this.state;
     return (
       <div className="contentWrap contentWrap_small ">
-        <div className="stepper_wrap">
+        <div className="stepperWrap">
           <h2 className="form__title">Registration Form</h2>
           <Stepper
             activeStep={steps[currentStep]}
@@ -120,6 +122,7 @@ class MasterForm extends Component {
             currentStep={currentStep}
             handleChangeInput={this.handleChangeInput}
             income={income}
+            okToSpend={okToSpend}
             notifications={notifications}
             expenseTypes={expenseTypes}
           />

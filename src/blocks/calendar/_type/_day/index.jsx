@@ -111,7 +111,7 @@ class CalendarDay extends Component {
   render() {
     const { currentDay } = this.state;
     return (
-      <div className="container_calendar">
+      <div className="calendarContainer">
         <CalendarNav date={this.dateToShow()} prevClick={this.prevDay} nextClick={this.nextDay} />
         <div className="container_flex">
           <table className="calendar_type_day">
