@@ -6,7 +6,7 @@ import Event from '../../__label/calendar__label';
 
 import './calendar_type_day.css';
 import '../../__cell/calendar__cell.css';
-import '../../../../stylesheets/main.css';
+import '../../../../styles/main.css';
 
 class CalendarDay extends Component {
   state = {

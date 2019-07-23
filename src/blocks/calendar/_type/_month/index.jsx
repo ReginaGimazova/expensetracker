@@ -5,7 +5,7 @@ import CalendarNav from '../../__navigationBar';
 import Event from '../../__label/calendar__label';
 
 import './calendar_type_month.css';
-import '../../../../stylesheets/main.css';
+import '../../../../styles/main.css';
 
 class CalendarMonth extends Component {
   state = {

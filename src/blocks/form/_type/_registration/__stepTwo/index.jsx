@@ -4,7 +4,7 @@ import Select from 'react-select';
 import Input from '../../../../input';
 import Label from '../../../../input/__label';
 import '../../../form.css';
-import '../../../../../stylesheets/main.css';
+import '../../../../../styles/main.css';
 
 import expenseTypes from '../../../../../data/expenseTypes';
 

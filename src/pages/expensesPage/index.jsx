@@ -2,7 +2,7 @@ import React from 'react';
 import MainTemplate from '../../templates/MainTemplate';
 import NavigationBar from '../../blocks/navigationBar';
 import ExpenseContent from '../../blocks/expenseContent';
-import '../../stylesheets/main.css';
+import '../../styles/main.css';
 
 const expensePage = () => (
   <MainTemplate>
