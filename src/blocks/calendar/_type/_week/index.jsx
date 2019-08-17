@@ -4,7 +4,7 @@ import CalendarHeader from '../../__header/calendar__header';
 import CalendarNav from '../../__navigationBar';
 import Event from '../../__label/calendar__label';
 
-import '../../../../styles/main.css';
+import '../../../../static/main.css';
 import './calendar_type_week.scss';
 
 class CalendarWeek extends Component {

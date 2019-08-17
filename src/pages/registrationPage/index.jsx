@@ -1,7 +1,7 @@
 import React from 'react';
 import RegForm from '../../blocks/form/_type/_registration';
 import MainTemplate from '../../templates/MainTemplate';
-import '../../styles/main.css';
+import '../../static/main.css';
 
 const RegistrationPage = () => (
   <MainTemplate>

@@ -1,6 +1,6 @@
 import React from 'react';
 import MainTemplate from '../../templates/MainTemplate';
-import '../../styles/main.css';
+import '../../static/main.css';
 
 const MainPage = () => (
   <MainTemplate>

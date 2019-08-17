@@ -6,7 +6,7 @@ import CalendarMonth from '../../blocks/calendar/_type/_month';
 import MainTemplate from '../../templates/MainTemplate';
 import NavigationBar from '../../blocks/navigationBar';
 import data from '../../data/spending';
-import '../../styles/main.css';
+import '../../static/main.css';
 
 const CalendarPage = () => (
   <MainTemplate>
