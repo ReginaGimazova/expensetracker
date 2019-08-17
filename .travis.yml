@@ -10,7 +10,8 @@ script: yarn build
 deploy:
   provider: heroku
   api_key:
-    secure: 019c8508-2e9a-4090-8638-6f08931a7e1a
+    secure:
+      secure: Bl50o5U8lHZD6ak2sHwPXm5BS6IccM7mkac0gg32gaF6Ba0ZiW7PSYMRgf7HtgC6PmwcSc1YXC+x3GpF3bDuCflB0e1hVuYrY+RlKrYZou7Uw2Jk5cIbfckcJ3LT2brl5V/cbxE4FOQB6gZ9ut48kM3ZIaarY/Sz9NgJ44CfdSi7iUqharxmSblIxoir5xImdikUYC8/OSY5zzLlserFaRYH1cp5nt+LCAgVXsYdK55RyjDaq0R8RwbA/AHLoQRQd7bbQ0VgwelKkrwgqhs1e3F74eI6g8tBVTD09Ve8BNyx0LU2pDtG7gcBV5u983OQmg5NWAtNnx2d+CHGlKJYL+movoWqLGz+kw17NgmarIILDFlWmiw8fV1yupgfESSMS2LQ1ZhEWX4+SstQCJywve52CzVfJ9L6HQH5rlE3CLY5SpFzSKtmZrYV04hoA9hAtTLO6RWLE/953EIZLwod2oFoDLg8mD7SOqtoEtqQi0WNNxQJRJnNzMSn7Ho4FyqsHdkvW6DQedyuQnjmkjOk5/XEqeXmGSKRjsafRC5QBEGKVF75ZsGEEzRj3I2YzZ0xy7ndb5rJY26chdcrAvT1uD3zFoQZ3c9rIwnB0ITTkAJnhv5OGl0jtZAHRSKE+Yun37vkTwD5iaZCXheFYnO1OnkfUfEc34cKlX5pfJNK7qE=
   app: expense-tracker-todo
   on:
     branch: master
