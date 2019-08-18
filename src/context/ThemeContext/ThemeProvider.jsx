@@ -12,7 +12,6 @@ const ThemeProvider = ({ children }) => {
   const [state, dispatch] = useReducer(reducer, initialState);
 
   const changeTheme = theme => {
-    console.log(theme);
     dispatch({ type: actionTypes.SET_THEME, payload: theme });
   };
 
