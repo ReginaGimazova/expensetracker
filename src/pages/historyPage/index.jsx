@@ -10,26 +10,24 @@ import '../../static/main.css';
 
 const CalendarPage = () => (
   <MainTemplate>
-    <div className="container_flex">
-      <NavigationBar />
-      <div className="contentWrap contentWrap_white">
-        <Tabs>
-          <TabList>
-            <Tab>MONTH</Tab>
-            <Tab>WEEK</Tab>
-            <Tab>DAY</Tab>
-          </TabList>
-          <TabPanel>
-            <CalendarMonth data={data} />
-          </TabPanel>
-          <TabPanel>
-            <CalendarWeek data={data} />
-          </TabPanel>
-          <TabPanel>
-            <CalendarDay data={data} />
-          </TabPanel>
-        </Tabs>
-      </div>
+    <NavigationBar />
+    <div className="contentWrap contentWrap_white">
+      <Tabs>
+        <TabList>
+          <Tab>MONTH</Tab>
+          <Tab>WEEK</Tab>
+          <Tab>DAY</Tab>
+        </TabList>
+        <TabPanel>
+          <CalendarMonth data={data} />
+        </TabPanel>
+        <TabPanel>
+          <CalendarWeek data={data} />
+        </TabPanel>
+        <TabPanel>
+          <CalendarDay data={data} />
+        </TabPanel>
+      </Tabs>
     </div>
   </MainTemplate>
 );

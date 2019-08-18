@@ -4,6 +4,7 @@
 }
 .template__content {
   height: inherit;
+  display: flex;
 }
 
 /*# sourceMappingURL=MainTemplate.css.map */

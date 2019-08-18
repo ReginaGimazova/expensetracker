@@ -48,5 +48,12 @@
   margin-right: auto;
   margin-left: 0;
 }
+.button_switch {
+  margin: 0 20px 0 0;
+  min-width: 50px;
+  border: none;
+  background-color: unset;
+  font-size: 30px;
+}
 
 /*# sourceMappingURL=button.css.map */
