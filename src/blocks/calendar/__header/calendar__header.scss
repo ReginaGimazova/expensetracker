@@ -1,26 +1,27 @@
-.calendar__header{
-    width: inherit;
-    margin-bottom: 20px;
-    
-    &_type_simple {
-        width: calc(100%/7);
-        font-weight: bolder;
-        color: var(--dark-gray);
-        font-size: 14px;
-        min-width: 150px;
-        font-family: var(--font);
+.calendar__header {
+  width: inherit;
+  margin-bottom: 20px;
+
+  &_type_simple {
+    width: calc(100% / 7);
+    font-weight: bolder;
+    color: var(--dark-gray);
+    font-size: 14px;
+    min-width: 150px;
+    font-family: var(--font);
+  }
+
+  &_type_composite {
+    font-size: 14px;
+    font-weight: bolder;
+    color: var(--dark-gray);
+    font-family: var(--font);
+    text-transform: uppercase;
+
+    p {
+      font-size: 20px;
+      margin: 5px 0;
+      font-weight: normal;
     }
-    
-    &_type_composite {
-        font-size: 14px;
-        font-weight: bolder;
-        color: var(--dark-gray);
-        font-family: var(--font);
-        
-        p {
-            font-size: 20px;
-            margin: 5px 0;
-            font-weight: normal;
-        }
-    }
+  }
 }

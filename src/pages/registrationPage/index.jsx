@@ -1,14 +1,18 @@
-import React from 'react';
-import RegForm from '../../blocks/form/_type/_registration';
+import React, { useContext } from 'react';
+import ThemeContext from '../../context/ThemeContext';
+import Form from '../../blocks/form/_type/_registration';
 import MainTemplate from '../../templates/MainTemplate';
 import '../../static/main.css';
 
-const RegistrationPage = () => (
-  <MainTemplate>
-    <div>
-      <RegForm />
-    </div>
-  </MainTemplate>
-);
+const RegistrationPage = () => {
+  const { state } = useContext(ThemeContext);
+  const { theme } = state;
+
+  return (
+    <MainTemplate>
+      <Form theme={theme} />
+    </MainTemplate>
+  );
+};
 
 export default RegistrationPage;

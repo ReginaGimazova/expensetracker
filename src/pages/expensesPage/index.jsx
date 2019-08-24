@@ -6,9 +6,9 @@ import '../../static/main.css';
 
 const expensePage = () => (
   <MainTemplate>
-    <div className="container_flex container">
+    <div className="container_flex">
       <NavigationBar />
-      <div className="contentWrap contentWrap_white">
+      <div className="mainContentWrap  mainContentWrap _white">
         <ExpenseContent />
       </div>
     </div>

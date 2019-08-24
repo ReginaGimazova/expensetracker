@@ -11,10 +11,10 @@
 }
 .header_light {
   background-color: var(--white);
-  color: var(--dark-blue);
+  color: var(--dark-gray);
 }
 .header_dark {
-  background-color: var(--dark-blue);
+  background-color: var(--dark-gray);
   color: var(--white);
 }
 .header__title {

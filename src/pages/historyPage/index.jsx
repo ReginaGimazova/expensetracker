@@ -11,7 +11,7 @@ import '../../static/main.css';
 const CalendarPage = () => (
   <MainTemplate>
     <NavigationBar />
-    <div className="contentWrap contentWrap_white">
+    <div className="mainContentWrap  mainContentWrap_white">
       <Tabs>
         <TabList>
           <Tab>MONTH</Tab>

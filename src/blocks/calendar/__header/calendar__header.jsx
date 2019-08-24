@@ -33,7 +33,7 @@ const CalendarHeader = ({ weekDays, days, leftFirstColumn, day, weekDay }) => (
       <tr>
         {leftFirstColumn && <th />}
         <th className="calendar__header_type_composite">
-          {weekDay.toUpperCase()}
+          {weekDay}
           <p>{day}</p>
         </th>
       </tr>

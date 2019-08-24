@@ -96,8 +96,10 @@ class MasterForm extends Component {
       notifications,
       expenseTypes,
     } = this.state;
+    const { theme } = this.props;
+
     return (
-      <div className="contentWrap contentWrap_small ">
+      <div className="mainContentWrap mainContentWrap_small ">
         <div className="stepperWrap">
           <h2 className="form__title">Registration Form</h2>
           <Stepper

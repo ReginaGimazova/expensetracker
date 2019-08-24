@@ -1,8 +1,7 @@
 .react-tabs {
   width: 100%;
 }
-
-.react-tabs .react-tabs__tab {
+.react-tabs__tab {
   border: none;
   font-size: 18px;
   font-weight: bold;
@@ -15,14 +14,12 @@
   position: static;
   margin: 20px;
 }
-
-.react-tabs .react-tabs__tab--selected {
+.react-tabs__tab--selected {
   background-color: var(--yellow);
   position: static;
   color: var(--white);
 }
-
-.react-tabs .react-tabs__tab-list {
+.react-tabs__tab-list {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -31,37 +28,12 @@
   margin: 0;
 }
 
-.icon {
-  color: var(--dark-blue);
-  font-size: 20px;
-  margin-bottom: 13px;
-  margin-right: 10px;
-}
-
-.image {
-  width: 400px;
-  height: 350px;
-  margin: 50px;
-}
-
-.container {
-  width: 100%;
-  height: 100%;
-  margin-top: 100px;
-}
-
 .container_flex {
   display: flex;
   flex-wrap: wrap;
 }
 
-.calendarContainer_ {
-  width: 100%;
-  overflow-x: scroll;
-  -webkit-overflow-scrolling: touch;
-}
-
-.contentWrap {
+.mainContentWrap {
   flex: 4;
   padding: 50px;
   display: flex;
@@ -70,12 +42,10 @@
   justify-content: center;
   height: max-content;
 }
-
-.contentWrap_white {
+.mainContentWrap_white {
   background-color: var(--white);
 }
-
-.contentWrap_small {
+.mainContentWrap_small {
   width: 60%;
   margin: 0 auto;
 }
@@ -89,5 +59,4 @@
   max-width: 300px;
 }
 
-.mainPageContainer {
-}
+/*# sourceMappingURL=main.css.map */

@@ -124,7 +124,7 @@ class CalendarMonth extends Component {
           prevClick={this.prevMonth}
           nextClick={this.nextMonth}
         />
-        <div className="calendarContainer">
+        <div>
           <table className="calendar_type_month">
             <CalendarHeader weekDays={this.weekDays()} />
             {this.renderDays()}
