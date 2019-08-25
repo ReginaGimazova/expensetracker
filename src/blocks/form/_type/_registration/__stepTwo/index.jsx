@@ -8,11 +8,25 @@ import '../../../../../static/main.css';
 
 import expenseTypes from '../../../../../data/expenseTypes';
 
-const FormTypeRegistrationStepTwo = ({ currentStep, income, handleChangeInput, okToSpend }) => {
+const FormTypeRegistrationStepTwo = ({
+  currentStep,
+  income,
+  okToSpend,
+  setIncome,
+  setOkToSpend,
+}) => {
   if (currentStep !== 1) {
     return null;
   }
-  console.log(expenseTypes);
+
+  const handleIncome = event => {
+    setIncome(event.target.value);
+  };
+
+  const handleOkToSpend = event => {
+    setOkToSpend(event.target.value);
+  };
+
   return (
     <div>
       <div className="form__group form__group_type_number">
@@ -25,7 +39,7 @@ const FormTypeRegistrationStepTwo = ({ currentStep, income, handleChangeInput, o
           min="0.00"
           step="0.01"
           value={income}
-          onChange={handleChangeInput}
+          onChange={handleIncome}
         />
       </div>
       <div className="form__group form__group_type_number">
@@ -40,7 +54,7 @@ const FormTypeRegistrationStepTwo = ({ currentStep, income, handleChangeInput, o
             min="0.00"
             step="0.01"
             value={okToSpend}
-            onChange={handleChangeInput}
+            onChange={handleOkToSpend}
           />
         </div>
       </div>

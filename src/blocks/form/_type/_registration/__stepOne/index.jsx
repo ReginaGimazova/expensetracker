@@ -7,12 +7,27 @@ const FormTypeRegistrationStepOne = ({
   currentStep,
   username,
   email,
-  handleChangeInput,
   password,
+  setEmail,
+  setPassword,
+  setUsername,
 }) => {
   if (currentStep !== 0) {
     return null;
   }
+
+  const handleEmail = event => {
+    setEmail(event.target.value);
+  };
+
+  const handleUsername = event => {
+    setUsername(event.target.value);
+  };
+
+  const handlePassword = event => {
+    setPassword(event.target.value);
+  };
+
   return (
     <div className="container_flex">
       <div className="form__group">
@@ -23,7 +38,7 @@ const FormTypeRegistrationStepOne = ({
           type="email"
           placeholder="Enter your email"
           value={email}
-          onChange={handleChangeInput}
+          onChange={handleEmail}
         />
       </div>
       <div className="form__group">
@@ -34,7 +49,7 @@ const FormTypeRegistrationStepOne = ({
           type="text"
           placeholder="Enter your name"
           value={username}
-          onChange={handleChangeInput}
+          onChange={handleUsername}
         />
       </div>
       <div className="form__group">
@@ -45,7 +60,7 @@ const FormTypeRegistrationStepOne = ({
           type="password"
           placeholder="Enter your password"
           value={password}
-          onChange={handleChangeInput}
+          onChange={handlePassword}
         />
       </div>
     </div>

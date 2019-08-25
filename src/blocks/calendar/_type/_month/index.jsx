@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import dateFns from 'date-fns';
 import CalendarHeader from '../../__header/calendar__header';
 import CalendarNav from '../../__navigationBar';
@@ -7,60 +7,45 @@ import Event from '../../__label/calendar__label';
 import './calendar_type_month.css';
 import '../../../../static/main.css';
 
-class CalendarMonth extends Component {
-  state = {
-    currentMonth: new Date(),
-    // eslint-disable-next-line react/no-unused-state
-    selectedDate: new Date(),
+const CalendarMonth = props => {
+  const [currentMonth, setCurrentMonth] = useState(new Date());
+
+  const dateToShow = () => {
+    return dateFns.format(currentMonth, 'MMMM YYYY');
   };
 
-  dateToShow = () => {
-    const dateFormat = 'MMMM YYYY';
-    const { currentMonth } = this.state;
-    return dateFns.format(currentMonth, dateFormat);
+  const prevMonth = () => {
+    setCurrentMonth(dateFns.subMonths(currentMonth, 1));
   };
 
-  prevMonth = () => {
-    const { currentMonth } = this.state;
-    this.setState({
-      currentMonth: dateFns.subMonths(currentMonth, 1),
-    });
+  const nextMonth = () => {
+    setCurrentMonth(dateFns.addMonths(currentMonth, 1));
   };
 
-  nextMonth = () => {
-    const { currentMonth } = this.state;
-    this.setState({
-      currentMonth: dateFns.addMonths(currentMonth, 1),
-    });
+  const checkEventDate = (eventDate, day) => {
+    return dateFns.isSameDay(new Date(eventDate), day);
   };
 
-  checkEventDate = (eventDate, day) => {
-    // eslint-disable-next-line no-param-reassign
-    eventDate = new Date(eventDate);
-    return dateFns.isSameDay(eventDate, day);
-  };
-
-  weekDays = () => {
-    const dateFormat = 'dddd';
+  const weekDays = () => {
     const days = [];
-    const { currentMonth } = this.state;
     const startDate = dateFns.startOfWeek(currentMonth);
     for (let i = 0; i < 7; i += 1) {
-      days.push(dateFns.format(dateFns.addDays(startDate, i), dateFormat));
+      days.push(dateFns.format(dateFns.addDays(startDate, i), 'dddd'));
     }
     return days;
   };
 
-  displayEventInfo = date => {
-    const timeFormat = 'HH:mm';
-    // eslint-disable-next-line no-param-reassign
-    date = new Date(date);
-    return dateFns.format(date, timeFormat);
+  // eslint-disable-next-line no-unused-vars
+  const displayEventInfo = date => {
+    return dateFns.format(new Date(date), 'HH:mm');
   };
 
-  renderDays = () => {
-    const { currentMonth } = this.state;
-    const { data, handleEvent } = this.props;
+  const onDateClick = day => {
+    console.log(day);
+  };
+
+  const renderDays = () => {
+    const { data, handleEvent } = props;
     const monthStart = dateFns.startOfMonth(currentMonth);
     const monthEnd = dateFns.endOfMonth(currentMonth);
     const startDate = dateFns.startOfWeek(monthStart);
@@ -82,7 +67,7 @@ class CalendarMonth extends Component {
             className={`calendar__cell_type_month
                             ${dateFns.isToday(day) ? 'calendar__cell_today' : ''}`}
             key={day}
-            onClick={() => this.onDateClick(dateFns.parse(cloneDay))}
+            onClick={() => onDateClick(dateFns.parse(cloneDay))}
           >
             <div className="calendar__cellHeader_type_month">
               <span>{formattedDate}</span>
@@ -92,7 +77,7 @@ class CalendarMonth extends Component {
             {data.map(
               // eslint-disable-next-line no-loop-func
               spending =>
-                this.checkEventDate(spending.date, day) && (
+                checkEventDate(spending.date, day) && (
                   <Event event={spending} handleEvent={handleEvent} key={spending.id} type="month">
                     {spending.cost}
                   </Event>
@@ -109,30 +94,17 @@ class CalendarMonth extends Component {
     return <tbody className="calendar__body_type_month">{rows}</tbody>;
   };
 
-  onDateClick = day => {
-    this.setState({
-      // eslint-disable-next-line react/no-unused-state
-      selectedDate: day,
-    });
-  };
-
-  render() {
-    return (
+  return (
+    <div>
+      <CalendarNav date={dateToShow()} prevClick={prevMonth} nextClick={nextMonth} />
       <div>
-        <CalendarNav
-          date={this.dateToShow()}
-          prevClick={this.prevMonth}
-          nextClick={this.nextMonth}
-        />
-        <div>
-          <table className="calendar_type_month">
-            <CalendarHeader weekDays={this.weekDays()} />
-            {this.renderDays()}
-          </table>
-        </div>
+        <table className="calendar_type_month">
+          <CalendarHeader weekDays={weekDays()} />
+          {renderDays()}
+        </table>
       </div>
-    );
-  }
-}
+    </div>
+  );
+};
 
 export default CalendarMonth;
