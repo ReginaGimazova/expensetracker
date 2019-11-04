@@ -6,6 +6,7 @@ import Event from '../../__label/calendar__label';
 
 import '../../../../static/main.css';
 import './calendar_type_week.scss';
+import Button from '../../../button';
 
 const CalendarWeek = props => {
   const [currentWeek, setCurrentWeek] = useState(new Date());
@@ -103,16 +104,22 @@ const CalendarWeek = props => {
     return rows;
   };
 
+  const changeView = () => {
+    const { setViewType } = props;
+    setViewType('list');
+  };
+
   return (
-    <div>
+    <>
+      <Button onclick={changeView} className="calendar__button button_simple">
+        switch to list view
+      </Button>
       <CalendarNav date={dateToShow()} prevClick={prevWeek} nextClick={nextWeek} />
-      <div className="container_flex">
-        <table className="calendar_type_week">
-          <CalendarHeader weekDays={weekDays()} days={days()} leftFirstColumn="true" />
-          <tbody>{renderTimeBLocks()}</tbody>
-        </table>
-      </div>
-    </div>
+      <table className="calendar_type_week">
+        <CalendarHeader weekDays={weekDays()} days={days()} leftFirstColumn="true" />
+        <tbody>{renderTimeBLocks()}</tbody>
+      </table>
+    </>
   );
 };
 

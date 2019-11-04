@@ -1,13 +1,16 @@
 .calendar_type_week {
-    height: inherit;
-    width: 100%;
-    margin-top: 50px;
-    position: relative;
-    max-height: 700px;
-    overflow-y: scroll;
-    
+  height: inherit;
+  width: 100%;
+  margin-top: 50px;
+  position: relative;
+  max-height: 700px;
+  overflow-y: scroll;
 }
 
 table {
-    border-collapse: collapse;
+  border-collapse: collapse;
+}
+
+.calendar__button {
+  display: flex;
 }

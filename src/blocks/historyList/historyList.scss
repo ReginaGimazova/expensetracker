@@ -1,0 +1,35 @@
+.historyList {
+  max-width: 80%;
+  margin: 0 auto;
+
+  &__item {
+    padding: 10px;
+    margin: 10px 0;
+    background-color: var(--white);
+    color: var(--dark-gray);
+  }
+
+  button {
+    display: flex;
+    justify-content: right;
+    margin-left: auto;
+    margin-right: 0;
+  }
+}
+
+.historyCard__info {
+  &_description {
+    color: var(--gray);
+    text-transform: uppercase;
+  }
+
+  &_cost {
+    margin: 0;
+    font-size: 20px;
+
+    svg {
+      margin-left: 5px;
+      font-size: 16px;
+    }
+  }
+}

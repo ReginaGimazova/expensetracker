@@ -3,6 +3,7 @@ import dateFns from 'date-fns';
 import CalendarHeader from '../../__header/calendar__header';
 import CalendarNav from '../../__navigationBar';
 import Event from '../../__label/calendar__label';
+import Button from '../../../button';
 
 import './calendar_type_month.css';
 import '../../../../static/main.css';
@@ -94,16 +95,24 @@ const CalendarMonth = props => {
     return <tbody className="calendar__body_type_month">{rows}</tbody>;
   };
 
+  const changeView = () => {
+    const { setViewType } = props;
+    setViewType('list');
+  };
+
   return (
-    <div>
+    <>
+      <Button onclick={changeView} className="calendar__button button_simple">
+        switch to list view
+      </Button>
       <CalendarNav date={dateToShow()} prevClick={prevMonth} nextClick={nextMonth} />
-      <div>
+      <div className="container_calendar">
         <table className="calendar_type_month">
           <CalendarHeader weekDays={weekDays()} />
           {renderDays()}
         </table>
       </div>
-    </div>
+    </>
   );
 };
 

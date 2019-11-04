@@ -2,8 +2,84 @@
   display: flex;
   flex-direction: column;
   min-height: 100%;
-  width: 500px;
+  min-width: 300px;
   flex: 1;
   background-color: var(--white);
   box-shadow: 2px 2px 2px var(--light-gray);
+
+  &_light {
+    background-color: var(--white);
+    .navigationBar__item {
+      color: var(--dark-gray);
+    }
+  }
+
+  &_dark {
+    background-color: var(--dark-gray);
+
+    .navigationBar__item {
+      color: var(--white);
+    }
+  }
+}
+
+.bm {
+  &-item {
+    padding: 1em;
+
+    &-list {
+      height: calc(100vh - 2.5rem);
+      display: flex;
+      flex-direction: column;
+      padding-top: 2.5rem;
+      background-color: var(--white);
+    }
+  }
+
+  &-menu {
+    height: 100%;
+    box-sizing: border-box;
+    overflow: auto;
+    box-shadow: 2px 2px 2px var(--light-gray);
+
+    &-wrap {
+      position: fixed;
+      right: inherit;
+      z-index: 1100;
+      width: 300px;
+      height: 100%;
+      transition: all 0.5s ease 0s;
+    }
+  }
+
+  &-burger {
+    &-button {
+      position: fixed;
+      width: 36px;
+      height: 30px;
+      left: 26px;
+      top: 26px;
+    }
+
+    &-bars {
+      background: var(--dark-gray);
+    }
+  }
+
+  &-cross-button span {
+    .bm-cross {
+      height: 15px !important;
+      background-color: var(--dark-gray);
+    }
+  }
+}
+
+button:active {
+  border: none;
+  outline: none;
+}
+
+button:focus {
+  border: none;
+  outline: none;
 }

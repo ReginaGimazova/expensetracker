@@ -15,18 +15,18 @@
   justify-content: center;
 }
 .calendar__label_notBlock:hover {
-  background-color: #F0F2F4;
+  background-color: #f0f2f4;
   border-radius: 5px;
   font-weight: bolder;
 }
 .calendar__label_notBlock:before {
   margin-right: 10px;
-  font-family: "Material Icons";
-  content: "lens";
-  color: #EA736A;
+  font-family: 'Material Icons';
+  content: 'lens';
+  color: var(--red);
 }
 .calendar__label_block {
-  background-color: #EA736A;
+  background-color: var(--red);
   color: #ffffff;
   border-radius: 4px;
   text-align: left;

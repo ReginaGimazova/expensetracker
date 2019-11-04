@@ -1,11 +1,14 @@
 .calendar_type_day {
-    height: inherit;
-    width: 100%;
-    margin-top: 50px;
-    position: relative;
+  height: inherit;
+  width: 100%;
+  margin-top: 50px;
+  position: relative;
 }
 
-
 table {
-    border-collapse: collapse;
+  border-collapse: collapse;
+}
+
+.calendar__button {
+  display: flex;
 }

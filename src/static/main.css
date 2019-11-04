@@ -1,5 +1,6 @@
 .react-tabs {
   width: 100%;
+  max-width: 80%;
 }
 .react-tabs__tab {
   border: none;
@@ -28,17 +29,25 @@
   margin: 0;
 }
 
+.container {
+  width: 100%;
+}
 .container_flex {
   display: flex;
   flex-wrap: wrap;
 }
+.container_calendar {
+  display: flex;
+  justify-content: center;
+}
 
 .mainContentWrap {
   flex: 4;
-  padding: 50px;
   display: flex;
   flex-wrap: wrap;
-  margin: 20px 100px;
+  max-width: 80%;
+  padding: 50px 0 100px 0;
+  margin: 7rem auto;
   justify-content: center;
   height: max-content;
 }

@@ -9,4 +9,8 @@ table {
   border-collapse: collapse;
 }
 
+.calendar__button {
+  display: flex;
+}
+
 /*# sourceMappingURL=calendar_type_day.css.map */

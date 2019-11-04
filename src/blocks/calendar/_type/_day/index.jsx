@@ -7,6 +7,7 @@ import Event from '../../__label/calendar__label';
 import './calendar_type_day.css';
 import '../../__cell/calendar__cell.css';
 import '../../../../static/main.css';
+import Button from '../../../button';
 
 const CalendarDay = props => {
   const [currentDay, setCurrentDay] = useState(new Date());
@@ -81,10 +82,18 @@ const CalendarDay = props => {
     return rows;
   };
 
+  const changeView = () => {
+    const { setViewType } = props;
+    setViewType('list');
+  };
+
   return (
-    <div>
+    <>
+      <Button onclick={changeView} className="calendar__button button_simple">
+        switch to list view
+      </Button>
       <CalendarNav date={dateToShow()} prevClick={prevDay} nextClick={nextDay} />
-      <div className="container_flex">
+      <div className="container_calendar">
         <table className="calendar_type_day">
           <CalendarHeader
             day={currentDay.getDate()}
@@ -94,7 +103,7 @@ const CalendarDay = props => {
           <tbody>{renderTimeBLocks()}</tbody>
         </table>
       </div>
-    </div>
+    </>
   );
 };
 

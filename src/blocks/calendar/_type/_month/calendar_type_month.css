@@ -1,6 +1,6 @@
 .calendar_type_month {
   height: inherit;
-  width: inherit;
+  width: 100%;
   margin-top: 50px;
 }
 
@@ -11,7 +11,7 @@
 
 .calendar__cell_type_month {
   height: 150px;
-  width: calc(100%/7);
+  width: calc(100% / 7);
   margin-top: 10px;
   text-align: center;
   vertical-align: top;
@@ -41,6 +41,10 @@
 
 table {
   border-collapse: collapse;
+}
+
+.calendar__button {
+  display: flex;
 }
 
 /*# sourceMappingURL=calendar_type_month.css.map */

@@ -46,4 +46,10 @@
     background-color: unset;
     font-size: 30px;
   }
+
+  &_simple {
+    border-radius: 3px;
+    border-color: var(--dark-gray);
+    color: var(--dark-gray);
+  }
 }

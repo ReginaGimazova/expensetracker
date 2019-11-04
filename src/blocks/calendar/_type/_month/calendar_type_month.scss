@@ -1,44 +1,48 @@
 .calendar_type_month {
-    height: inherit;
-    width: inherit;
-    margin-top: 50px;
+  height: inherit;
+  width: 100%;
+  margin-top: 50px;
 }
 
 .calendar__body_type_month {
-    width: inherit;
-    margin: 0 100px;
+  width: inherit;
+  margin: 0 100px;
 }
 
 .calendar__cell_type_month {
-    height: 150px;
-    width: calc(100%/7);
-    margin-top: 10px;
-    text-align: center;
-    vertical-align: top;
-    border: 1px gainsboro solid;
-    color: #616161;
+  height: 150px;
+  width: calc(100% / 7);
+  margin-top: 10px;
+  text-align: center;
+  vertical-align: top;
+  border: 1px gainsboro solid;
+  color: #616161;
 }
 
 .calendar__cellHeader_type_month {
-    width: 100%;
-    margin-top: 5px;
-    line-height: 24px;
-    font-size: 12px;
-    font-weight: bolder;
-    font-family: var(--font);
-    color: #616161;
+  width: 100%;
+  margin-top: 5px;
+  line-height: 24px;
+  font-size: 12px;
+  font-weight: bolder;
+  font-family: var(--font);
+  color: #616161;
 }
 
 .calendar__cell_today span {
-    width: 24px;
-    height: 24px;
-    display: inline-block;
-    border-radius: 50%;
-    background-color: #004a93;
-    color: white;
-    font-weight: bolder;
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  border-radius: 50%;
+  background-color: #004a93;
+  color: white;
+  font-weight: bolder;
 }
 
 table {
-    border-collapse: collapse;
+  border-collapse: collapse;
+}
+
+.calendar__button {
+  display: flex;
 }

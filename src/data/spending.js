@@ -1,4 +1,4 @@
-const spending = [
+export default [
   {
     id: 0,
     date: '2019/05/21 11:00',
@@ -42,5 +42,3 @@ const spending = [
     description: '',
   },
 ];
-
-export default spending;

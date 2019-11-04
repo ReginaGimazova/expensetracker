@@ -5,6 +5,7 @@
 .template__content {
   min-height: 100vh;
   display: flex;
+  margin-top: -5rem;
 }
 
 /*# sourceMappingURL=MainTemplate.css.map */

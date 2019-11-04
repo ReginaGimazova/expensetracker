@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './button.css';
 
-const Button = ({ onclick, icon, children, className }) => (
+const Button = ({ onclick, icon, children, className = 'button_simple' }) => (
   <button className={`button ${className}`} type="button" onClick={onclick}>
     {icon && <span>{icon}</span>}
     {children}
