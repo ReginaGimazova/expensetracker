@@ -24,11 +24,12 @@
   padding: 1em;
 }
 .bm-item-list {
-  height: calc(100vh - 2.5rem);
+  height: calc(100vh - 2.5rem) !important;
   display: flex;
   flex-direction: column;
   padding-top: 2.5rem;
   background-color: var(--white);
+  overflow-y: hidden;
 }
 .bm-menu {
   height: 100%;
