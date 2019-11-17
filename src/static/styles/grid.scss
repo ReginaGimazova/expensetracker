@@ -1,0 +1,22 @@
+$grid-columns: 12;
+$grid-rows: 2;
+$grid-gap: 1rem;
+$max-height: 500px;
+
+@for $i from 1 through $grid-columns {
+  .column-#{$i} {
+    display: inline-block;
+    width: 100% / $grid-columns * $i - 1%;
+
+    &:not(:last-child) {
+      margin-right: $grid-gap;
+    }
+  }
+}
+
+@for $i from 1 through $grid-rows {
+  .row-#{$i} {
+    height: $max-height / $grid-rows * $i;
+    display: flex;
+  }
+}

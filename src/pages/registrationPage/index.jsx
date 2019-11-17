@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import ThemeContext from '../../context/ThemeContext';
 import Form from '../../blocks/form/_type/_registration';
 import MainTemplate from '../../templates/MainTemplate';
-import '../../static/main.css';
+import '../../static/styles/main.css';
 
 const RegistrationPage = () => {
   const { state } = useContext(ThemeContext);

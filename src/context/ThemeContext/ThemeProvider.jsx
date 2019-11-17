@@ -1,5 +1,5 @@
 import React, { useReducer } from 'react';
-import themes from '../../static/themes';
+import themes from '../../static/styles/themes';
 import reducer from '../../store/reducer';
 import ThemeContext from '.';
 import * as actionTypes from '../../store/actionTypes';

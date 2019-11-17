@@ -8,7 +8,7 @@ import MainTemplate from '../../templates/MainTemplate';
 import NavigationBar from '../../blocks/navigationBar';
 
 import data from '../../data/spending';
-import '../../static/main.css';
+import '../../static/styles/main.css';
 
 const CalendarPage = () => {
   const [viewType, setViewType] = useState('calendar');

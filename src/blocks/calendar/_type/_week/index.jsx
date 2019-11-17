@@ -4,7 +4,7 @@ import CalendarHeader from '../../__header/calendar__header';
 import CalendarNav from '../../__navigationBar';
 import Event from '../../__label/calendar__label';
 
-import '../../../../static/main.css';
+import '../../../../static/styles/main.css';
 import './calendar_type_week.scss';
 import Button from '../../../button';
 

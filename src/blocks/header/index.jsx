@@ -2,9 +2,9 @@ import React, { useContext } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMoon, faSun } from '@fortawesome/free-solid-svg-icons';
 import ThemeContext from '../../context/ThemeContext';
-import themes from '../../static/themes';
+import themes from '../../static/styles/themes';
 import './header.css';
-import '../../static/main.css';
+import '../../static/styles/main.css';
 import Button from '../button';
 
 const Header = () => {

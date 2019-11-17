@@ -6,7 +6,7 @@ import Event from '../../__label/calendar__label';
 
 import './calendar_type_day.css';
 import '../../__cell/calendar__cell.css';
-import '../../../../static/main.css';
+import '../../../../static/styles/main.css';
 import Button from '../../../button';
 
 const CalendarDay = props => {

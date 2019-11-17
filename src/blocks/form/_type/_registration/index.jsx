@@ -4,7 +4,7 @@ import StepOne from './__stepOne';
 import StepTwo from './__stepTwo';
 import Stepper from '../../../stepper';
 import Button from '../../../button';
-import '../../../../static/main.css';
+import '../../../../static/styles/main.css';
 import '../../../button/button.css';
 import CustomLink from '../../../link';
 

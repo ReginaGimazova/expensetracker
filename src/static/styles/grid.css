@@ -1,0 +1,107 @@
+.column-1 {
+  display: inline-block;
+  width: 7.3333333333%;
+}
+.column-1:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.column-2 {
+  display: inline-block;
+  width: 15.6666666667%;
+}
+.column-2:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.column-3 {
+  display: inline-block;
+  width: 24%;
+}
+.column-3:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.column-4 {
+  display: inline-block;
+  width: 32.3333333333%;
+}
+.column-4:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.column-5 {
+  display: inline-block;
+  width: 40.6666666667%;
+}
+.column-5:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.column-6 {
+  display: inline-block;
+  width: 49%;
+}
+.column-6:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.column-7 {
+  display: inline-block;
+  width: 57.3333333333%;
+}
+.column-7:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.column-8 {
+  display: inline-block;
+  width: 65.6666666667%;
+}
+.column-8:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.column-9 {
+  display: inline-block;
+  width: 74%;
+}
+.column-9:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.column-10 {
+  display: inline-block;
+  width: 82.3333333333%;
+}
+.column-10:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.column-11 {
+  display: inline-block;
+  width: 90.6666666667%;
+}
+.column-11:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.column-12 {
+  display: inline-block;
+  width: 99%;
+}
+.column-12:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.row-1 {
+  height: 250px;
+  display: flex;
+}
+
+.row-2 {
+  height: 500px;
+  display: flex;
+}
+
+/*# sourceMappingURL=grid.css.map */

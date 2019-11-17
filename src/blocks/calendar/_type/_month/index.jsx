@@ -6,7 +6,7 @@ import Event from '../../__label/calendar__label';
 import Button from '../../../button';
 
 import './calendar_type_month.css';
-import '../../../../static/main.css';
+import '../../../../static/styles/main.css';
 
 const CalendarMonth = props => {
   const [currentMonth, setCurrentMonth] = useState(new Date());
